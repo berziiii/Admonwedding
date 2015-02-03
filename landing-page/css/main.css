@@ -66,17 +66,36 @@ nav {
   background-position: bottom 50px; }
 
 .main-container {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 0px; }
   .main-container .hero-container {
     width: 100%;
-    height: 750px;
+    height: 800px;
     overflow: hidden; }
+    .main-container .hero-container .date {
+      margin-top: 200px;
+      width: 50%;
+      text-align: center; }
+      .main-container .hero-container .date h1 {
+        color: #270233;
+        font-size: 80pt;
+        font-weight: 700;
+        padding-top: 15px;
+        padding-bottom: 15px; }
+      .main-container .hero-container .date h6 {
+        color: #270233;
+        font-size: 25pt;
+        font-style: italic; }
 
 .contact {
   width: 100%;
   background-color: #eee;
-  height: 100px; }
+  opacity: 0.9; }
   .contact .contact-info {
-    text-align: center; }
+    margin: 0px auto; }
+    .contact .contact-info h4 {
+      text-align: center;
+      margin: 10px;
+      color: #270233; }
 
 /*# sourceMappingURL=main.css.map */
