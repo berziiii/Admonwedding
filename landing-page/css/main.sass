@@ -31,6 +31,7 @@ nav
 	border-bottom: 2px solid $purple
 	opacity: .9
 	position: fixed
+	z-index: 2
 
 	.nav-image
 		line-height: 80px
@@ -67,18 +68,18 @@ nav
 				cursor: pointer
 				text-decoration: none
 
-.save-the-date 
-	background: url(../images/save-the-date.png) no-repeat center center
-	-webkit-background-size: cover
-	-moz-background-size: cover
-	-ms-background-size: cover
-	-o-background-size: cover
-	background-size: cover
-	background-position: bottom 50px
-
 .main-container 
 	width: 100%
 	margin-bottom: 0px
+
+	.save-the-date 
+		background: url(../images/save-the-date.png) no-repeat center center
+		-webkit-background-size: cover
+		-moz-background-size: cover
+		-ms-background-size: cover
+		-o-background-size: cover
+		background-size: cover
+		background-position: bottom 50px
 
 	.hero-container 
 		width: 100%
@@ -92,14 +93,24 @@ nav
 
 			h1
 				color: $purple
-				font-size: 80pt
-				font-weight: 700
+				font-size: 38pt
+				font-weight: 900
 				padding-top: 15px
 				padding-bottom: 15px
 
-			h6
+			h3
 				color: $purple
 				font-size: 25pt
+				font-style: italic
+
+		.prompt
+			margin-top: 200px
+			width: 50%
+			text-align: center
+
+			h4
+				color: $white
+				font-size: 20pt
 				font-style: italic
 
 
@@ -117,5 +128,82 @@ nav
 			color: $purple
 
 
+/* Media 
 
+@media (max-width: 1200px)
+	.main-container
+		.hero-container
+			.date
+				margin-top: 150px
+
+				h1
+					font-size: 30pt
+
+				h3
+					font-size: 20pt
+
+			.prompt
+				h4
+					font-size: 18pt
+
+
+@media (max-width: 992px)
+	.main-container
+
+		.save-the-date
+			background-position: right -200px bottom 10px
+
+		.hero-container
+			.date
+				margin-top: 150px
+
+				h1
+					font-size: 25pt
+
+				h3
+					font-size: 18pt
+
+			.prompt
+				h4
+					font-size: 15pt
+
+
+@media (max-width: 767px)
+	.main-container
+		.save-the-date
+			background-position: right -215px bottom 10px
+
+		.hero-container
+			.date
+				margin-top: 150px
+
+				h1
+					font-size: 18pt
+
+				h3
+					font-size: 14pt
+
+			.prompt
+				h4
+					font-size: 12pt
+
+@media (max-width: 400px)
+	.main-container
+		.save-the-date
+			background-position: right -235px bottom 10px
+
+		.hero-container
+			.date
+				margin-top: 218px
+				text-align: left
+
+				h1
+					font-size: 15pt
+
+				h3
+					font-size: 10pt
+
+			.prompt
+				h4
+					font-size: 12pt
 
