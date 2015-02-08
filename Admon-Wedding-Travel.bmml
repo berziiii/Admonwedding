@@ -1,0 +1,154 @@
+<mockup version="1.0" skin="wireframe" fontFace="Balsamiq Sans" measuredW="2108" measuredH="1197" mockupW="1783" mockupH="1197">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="325" y="0" w="1400" h="1197" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>16246734</color>
+        <text>Lindsay%20and%20Andy%20Admon%0Ahttp%3A//www.lindsayandandyadmon.com/travel/</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="325" y="70" w="1400" h="100" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <borderColor>2556467</borderColor>
+        <color>16777215</color>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Icon" x="1607" y="96" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>2556467</color>
+        <icon>ListIcon%7Clarge</icon>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Canvas" x="325" y="1127" w="1400" h="70" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>2556467</color>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Label" x="775" y="1148" w="-1" h="-1" measuredW="535" measuredH="28" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>16777215</color>
+        <size>20</size>
+        <text>Off-Piste%20Designs%20Copywrite%202015.%20All%20Rights%20Reserved.%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Image" x="826" y="95" w="-1" h="-1" measuredW="398" measuredH="51" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/names.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Title" x="919" y="218" w="-1" h="-1" measuredW="227" measuredH="63" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2556467</color>
+        <italic>false</italic>
+        <size>60</size>
+        <text>TRAVEL</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::Image" x="1413" y="418" w="-1" h="-1" measuredW="72" measuredH="72" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/sun.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Image" x="566" y="429" w="72" h="50" measuredW="96" measuredH="69" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/transport.png</src>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::Image" x="995" y="429" w="-1" h="-1" measuredW="75" measuredH="51" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/bed.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Title" x="971" y="520" w="-1" h="-1" measuredW="123" measuredH="43" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2556467</color>
+        <italic>true</italic>
+        <size>40</size>
+        <text>Hotels</text>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::Title" x="1364" y="520" w="-1" h="-1" measuredW="171" measuredH="43" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2556467</color>
+        <italic>true</italic>
+        <size>40</size>
+        <text>Activites</text>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::Title" x="515" y="520" w="-1" h="-1" measuredW="185" measuredH="43" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2556467</color>
+        <italic>true</italic>
+        <text>Transport</text>
+      </controlProperties>
+    </control>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::TextArea" x="459" y="612" w="296" h="235" measuredW="200" measuredH="140" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <borderColor>2556467</borderColor>
+        <color>2556467</color>
+        <size>24</size>
+        <text>Coming%20in%20from%20out%20of%20town%3F%20Don%27t%20worry%2C%20we%27ve%20got%20you%20covered%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::TextArea" x="884" y="612" w="296" h="235" measuredW="200" measuredH="140" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <borderColor>2556467</borderColor>
+        <color>2556467</color>
+        <size>24</size>
+        <text>Looking%20for%20a%20place%20to%20rest%20your%20head%3F%20Check%20out%20several%20different%20options%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::TextArea" x="1301" y="612" w="296" h="235" measuredW="200" measuredH="140" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <borderColor>2556467</borderColor>
+        <color>2556467</color>
+        <size>24</size>
+        <text>Looking%20for%20something%20to%20do%20in%20georgous%20Marblehead%2C%20before%20or%20after%20the%20big%20day%3F%20Where%20to%20begin%3F%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::Button" x="538" y="773" w="138" h="52" measuredW="80" measuredH="33" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <menuIcon>false</menuIcon>
+        <size>24</size>
+        <text>More%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::Button" x="963" y="773" w="138" h="52" measuredW="80" measuredH="33" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <size>24</size>
+        <text>More%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::Button" x="1380" y="773" w="138" h="52" measuredW="80" measuredH="33" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <size>24</size>
+        <text>More%21</text>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::StickyNote" x="1798" y="553" w="310" h="294" measuredW="109" measuredH="123" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>All%20%22More%21%22%20buttons%20will%20open%20modals%20with%20additional%20information.%20</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
