@@ -26,11 +26,13 @@ nav {
   opacity: 0.9;
   position: fixed;
   z-index: 2; }
-  nav .nav-image {
-    line-height: 80px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%; }
+  nav .nav-header {
+    text-align: center; }
+    nav .nav-header .nav-image {
+      line-height: 80px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      width: 100%; }
   nav .nav-menu {
     text-align: right; }
   nav a {
@@ -107,6 +109,12 @@ nav {
       color: #270233; }
 
 /* Media */
+@media (min-width: 1500px) {
+  nav .nav-header .nav-image {
+    width: 75%; }
+
+  .main-container .hero-container {
+    height: 950px; } }
 @media (max-width: 1200px) {
   .main-container .hero-container .date {
     margin-top: 150px; }

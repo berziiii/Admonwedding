@@ -1,0 +1,202 @@
+<mockup version="1.0" skin="wireframe" fontFace="Balsamiq Sans" measuredW="2830" measuredH="1281" mockupW="2505" mockupH="1281">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="325" y="0" w="1400" h="1197" measuredW="450" measuredH="400" zOrder="0" locked="true" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>square</borderStyle>
+        <color>2556467</color>
+        <text>Lindsay%20and%20Andy%20Admon%0Ahttp%3A//www.lindsayandandyadmon.com/event</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="325" y="70" w="1400" h="100" measuredW="100" measuredH="70" zOrder="1" locked="true" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <borderColor>2556467</borderColor>
+        <color>16777215</color>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Icon" x="1607" y="96" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="2" locked="true" isInGroup="-1">
+      <controlProperties>
+        <color>2556467</color>
+        <icon>ListIcon%7Clarge</icon>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Canvas" x="325" y="1127" w="1400" h="70" measuredW="100" measuredH="70" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>2556467</color>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Label" x="775" y="1148" w="-1" h="-1" measuredW="535" measuredH="28" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>16777215</color>
+        <size>20</size>
+        <text>Off-Piste%20Designs%20Copywrite%202015.%20All%20Rights%20Reserved.%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Image" x="826" y="95" w="-1" h="-1" measuredW="398" measuredH="51" zOrder="5" locked="true" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/names.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Canvas" x="325" y="178" w="1400" h="949" measuredW="100" measuredH="70" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <color>2556467</color>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Image" x="325" y="170" w="887" h="679" measuredW="1500" measuredH="1071" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/map.png</src>
+      </controlProperties>
+    </control>
+    <control controlID="48" controlTypeID="com.balsamiq.mockups::Title" x="1224" y="336" w="-1" h="-1" measuredW="372" measuredH="35" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <size>32</size>
+        <text>Our%20Lady%20Star%20of%20the%20Sea</text>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Title" x="1212" y="672" w="-1" h="-1" measuredW="411" measuredH="35" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <size>32</size>
+        <text>Nahant%20Coast%20Guard%20Station</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Canvas" x="1273" y="450" w="274" h="62" measuredW="100" measuredH="70" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>15198158</color>
+      </controlProperties>
+    </control>
+    <control controlID="52" controlTypeID="com.balsamiq.mockups::Canvas" x="1273" y="772" w="274" h="62" measuredW="100" measuredH="70" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>15198158</color>
+      </controlProperties>
+    </control>
+    <control controlID="53" controlTypeID="com.balsamiq.mockups::Label" x="1333" y="461" w="-1" h="-1" measuredW="155" measuredH="40" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2556467</color>
+        <italic>false</italic>
+        <size>32</size>
+        <text>Directions</text>
+      </controlProperties>
+    </control>
+    <control controlID="54" controlTypeID="com.balsamiq.mockups::Label" x="1333" y="783" w="-1" h="-1" measuredW="155" measuredH="40" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2556467</color>
+        <italic>false</italic>
+        <size>32</size>
+        <text>Directions</text>
+      </controlProperties>
+    </control>
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::Canvas" x="836" y="931" w="412" h="106" measuredW="100" measuredH="70" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>15198158</color>
+      </controlProperties>
+    </control>
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::Label" x="896" y="950" w="-1" h="-1" measuredW="292" measuredH="68" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2556467</color>
+        <italic>false</italic>
+        <size>60</size>
+        <text>Event%20Info</text>
+      </controlProperties>
+    </control>
+    <control controlID="57" controlTypeID="com.balsamiq.mockups::Title" x="1296" y="396" w="-1" h="-1" measuredW="229" measuredH="27" zOrder="16" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <size>24</size>
+        <text>Ceremony%20@%203%3A00pm</text>
+      </controlProperties>
+    </control>
+    <control controlID="58" controlTypeID="com.balsamiq.mockups::Title" x="1302" y="730" w="-1" h="-1" measuredW="230" measuredH="27" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>16777215</color>
+        <size>24</size>
+        <text>Festivities%20@%205%3A00pm</text>
+      </controlProperties>
+    </control>
+    <control controlID="59" controlTypeID="com.balsamiq.mockups::Arrow" x="1786" y="416" w="202" h="85" measuredW="150" measuredH="100" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="60" controlTypeID="com.balsamiq.mockups::Arrow" x="1772" y="508" w="216" h="186" measuredW="150" measuredH="100" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>bottom</direction>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="61" controlTypeID="com.balsamiq.mockups::Arrow" x="1757" y="1037" w="261" h="10" measuredW="150" measuredH="100" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>top</direction>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="64" controlTypeID="com.balsamiq.mockups::ModalScreen" x="2042" y="170" w="788" h="585" measuredW="318" measuredH="240" zOrder="21" locked="false" isInGroup="-1"/>
+    <control controlID="65" controlTypeID="com.balsamiq.mockups::StickyNote" x="1742" y="104" w="291" h="277" measuredW="109" measuredH="123" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>When%20you%20click%20on%20the%20Directions%20button%2C%20a%20modal%20pops%20up%20showing%20address%20and%20google%20map%20covering%20screen</text>
+      </controlProperties>
+    </control>
+    <control controlID="66" controlTypeID="com.balsamiq.mockups::Map" x="2042" y="214" w="788" h="424" measuredW="252" measuredH="222" zOrder="23" locked="false" isInGroup="-1"/>
+    <control controlID="67" controlTypeID="com.balsamiq.mockups::Label" x="2363" y="178" w="-1" h="-1" measuredW="146" measuredH="40" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Directions</text>
+      </controlProperties>
+    </control>
+    <control controlID="68" controlTypeID="com.balsamiq.mockups::TextArea" x="2319" y="653" w="234" h="102" measuredW="200" measuredH="140" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <color>15198158</color>
+        <size>20</size>
+        <text>TITLE%20OF%20PLACE%0A123%20North%20st.%0AMarblehead%2C%20MA%2012345%0A%28123%29-456-7890</text>
+      </controlProperties>
+    </control>
+    <control controlID="69" controlTypeID="com.balsamiq.mockups::ModalScreen" x="2045" y="783" w="782" h="498" measuredW="318" measuredH="240" zOrder="26" locked="false" isInGroup="-1"/>
+    <control controlID="70" controlTypeID="com.balsamiq.mockups::StickyNote" x="1742" y="730" w="291" h="277" measuredW="109" measuredH="123" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>28</size>
+        <text>When%20you%20click%20on%20the%20Event%20Info%20button%2C%20a%20modal%20pops%20up%20showing%20all%20the%20information%20regarding%20the%20event.</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::TextArea" x="2076" y="812" w="732" h="452" measuredW="200" measuredH="140" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <color>15198158</color>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="72" controlTypeID="com.balsamiq.mockups::Paragraph" x="2106" y="895" w="665" h="247" measuredW="275" measuredH="80" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2556467</color>
+        <size>20</size>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20nec%20et%20eruditi%20nonumes%20sententiae.%20Partem%20admodum%20incorrupte%20qui%20an%2C%20phaedrum%20nominati%20ius%20ne.%20Est%20prompta%20disputationi%20in%2C%20decore%20fierent%20ea%20mei.%20Impetus%20equidem%20accusamus%20no%20eam%2C%20ad%20saepe%20accusamus%20qui%2C%20vim%20erat%20lorem%20noluisse%20eu.%20Equidem%20voluptua%20conclusionemque%20eu%20eos.%20At%20omnium%20facilis%20eam.%20Id%20duo%20populo%20laoreet%20torquatos%2C%20vim%20sumo%20ridens%20delicata%20ei%2C%20at%20probo%20recteque%20delicatissimi%20vix.</text>
+      </controlProperties>
+    </control>
+    <control controlID="73" controlTypeID="com.balsamiq.mockups::Paragraph" x="2106" y="1110" w="665" h="129" measuredW="275" measuredH="80" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <color>2556467</color>
+        <size>20</size>
+        <text>Lorem%20ipsum%20dolor%20sit%20amet%2C%20nec%20et%20eruditi%20nonumes%20sententiae.%20Partem%20admodum%20incorrupte%20qui%20an%2C%20phaedrum%20nominati%20ius%20ne.%20Est%20prompta%20disputationi%20in%2C%20decore%20fierent%20ea%20mei.%20Impetus%20equidem%20accusamus%20no%20eam%2C%20ad%20saepe%20accusamus%20qui%2C%20vim%20erat%20lorem%20noluisse%20eu.%20Equidem%20voluptua%20conclusionemque%20eu%20eos.%20At%20omnium%20facilis%20eam.%20Id%20duo%20populo%20laoreet%20torquatos%2C%20vim%20sumo%20ridens%20delicata%20ei%2C%20at%20probo%20recteque%20delicatissimi%20vix.</text>
+      </controlProperties>
+    </control>
+    <control controlID="74" controlTypeID="com.balsamiq.mockups::Label" x="2229" y="823" w="-1" h="-1" measuredW="444" measuredH="40" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <align>center</align>
+        <bold>true</bold>
+        <color>2556467</color>
+        <size>32</size>
+        <text>Everything%20you%20need%20to%20know%21</text>
+        <underline>true</underline>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
