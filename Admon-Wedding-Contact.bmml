@@ -3,7 +3,7 @@
     <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="325" y="0" w="1400" h="1197" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>square</borderStyle>
-        <color>16246734</color>
+        <color>2556467</color>
         <text>Lindsay%20and%20Andy%20Admon%0Ahttp%3A//www.lindsayandandyadmon.com/travel/</text>
       </controlProperties>
     </control>
@@ -42,7 +42,7 @@
     <control controlID="49" controlTypeID="com.balsamiq.mockups::Title" x="919" y="218" w="-1" h="-1" measuredW="209" measuredH="63" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
-        <color>2556467</color>
+        <color>16246734</color>
         <italic>false</italic>
         <size>60</size>
         <text>SAY%20HI%21</text>
@@ -57,23 +57,24 @@
     </control>
     <control controlID="74" controlTypeID="com.balsamiq.mockups::FieldSet" x="669" y="367" w="713" h="540" measuredW="200" measuredH="170" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
-        <color>2556451</color>
+        <backgroundAlpha>1</backgroundAlpha>
+        <color>16246734</color>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="75" controlTypeID="com.balsamiq.mockups::TextInput" x="937" y="491" w="373" h="-1" measuredW="79" measuredH="23" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="75" controlTypeID="com.balsamiq.mockups::TextInput" x="937" y="491" w="373" h="-1" measuredW="128" measuredH="39" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <align>center</align>
         <borderColor>16246734</borderColor>
-        <color>16777215</color>
+        <color>2556467</color>
         <size>28</size>
-        <text/>
+        <text>John%20Doe</text>
       </controlProperties>
     </control>
-    <control controlID="76" controlTypeID="com.balsamiq.mockups::Title" x="909" y="382" w="-1" h="-1" measuredW="232" measuredH="35" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="76" controlTypeID="com.balsamiq.mockups::Title" x="909" y="401" w="-1" h="-1" measuredW="232" measuredH="35" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
-        <color>16246734</color>
+        <color>2556467</color>
         <size>32</size>
         <text>Drop%20us%20a%20note%21</text>
         <underline>true</underline>
@@ -82,7 +83,7 @@
     <control controlID="77" controlTypeID="com.balsamiq.mockups::Title" x="759" y="485" w="-1" h="-1" measuredW="96" measuredH="35" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
-        <color>16246734</color>
+        <color>2556467</color>
         <size>32</size>
         <text>Name%3A</text>
         <underline>true</underline>
@@ -91,7 +92,7 @@
     <control controlID="78" controlTypeID="com.balsamiq.mockups::Title" x="762" y="545" w="-1" h="-1" measuredW="90" measuredH="35" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
-        <color>16246734</color>
+        <color>2556467</color>
         <size>32</size>
         <text>Email%3A</text>
         <underline>true</underline>
@@ -100,7 +101,7 @@
     <control controlID="81" controlTypeID="com.balsamiq.mockups::Title" x="692" y="604" w="-1" h="-1" measuredW="231" measuredH="35" zOrder="13" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
-        <color>16246734</color>
+        <color>2556467</color>
         <size>32</size>
         <text>Phone%20Number%3A</text>
         <underline>true</underline>
@@ -108,15 +109,17 @@
     </control>
     <control controlID="82" controlTypeID="com.balsamiq.mockups::TextArea" x="937" y="660" w="373" h="213" measuredW="200" measuredH="140" zOrder="14" locked="false" isInGroup="-1">
       <controlProperties>
+        <align>center</align>
         <borderColor>16246734</borderColor>
-        <color>16777215</color>
-        <text/>
+        <color>2556467</color>
+        <size>28</size>
+        <text>Congrats%20you%20two%21%20Best%20wishes%21</text>
       </controlProperties>
     </control>
     <control controlID="83" controlTypeID="com.balsamiq.mockups::Title" x="736" y="660" w="-1" h="-1" measuredW="143" measuredH="35" zOrder="15" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
-        <color>16246734</color>
+        <color>2556467</color>
         <size>32</size>
         <text>Message%3A</text>
         <underline>true</underline>
@@ -125,27 +128,27 @@
     <control controlID="84" controlTypeID="com.balsamiq.mockups::Button" x="959" y="931" w="-1" h="-1" measuredW="166" measuredH="69" zOrder="16" locked="false" isInGroup="-1">
       <controlProperties>
         <bold>true</bold>
-        <color>2556467</color>
+        <color>16246734</color>
         <size>60</size>
         <text>Send</text>
       </controlProperties>
     </control>
-    <control controlID="85" controlTypeID="com.balsamiq.mockups::TextInput" x="937" y="551" w="373" h="-1" measuredW="79" measuredH="23" zOrder="17" locked="false" isInGroup="-1">
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::TextInput" x="937" y="551" w="373" h="-1" measuredW="222" measuredH="39" zOrder="17" locked="false" isInGroup="-1">
       <controlProperties>
         <align>center</align>
-        <borderColor>16246734</borderColor>
-        <color>16777215</color>
+        <borderColor>16777215</borderColor>
+        <color>2556467</color>
         <size>28</size>
-        <text/>
+        <text>jdow@gmail.com</text>
       </controlProperties>
     </control>
-    <control controlID="86" controlTypeID="com.balsamiq.mockups::TextInput" x="937" y="610" w="373" h="-1" measuredW="79" measuredH="23" zOrder="18" locked="false" isInGroup="-1">
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::TextInput" x="937" y="610" w="373" h="-1" measuredW="194" measuredH="39" zOrder="18" locked="false" isInGroup="-1">
       <controlProperties>
         <align>center</align>
         <borderColor>16246734</borderColor>
-        <color>16777215</color>
+        <color>2556467</color>
         <size>28</size>
-        <text/>
+        <text>123-456-7890</text>
       </controlProperties>
     </control>
   </controls>
