@@ -1,4 +1,13 @@
 /* helper classes */
+@font-face {
+  font-family: "Chelsea";
+  src: url("../fonts/Chelsea/Chelsea.woff") format("woff"); }
+@font-face {
+  font-family: "Chelsea-bold";
+  src: url("../fonts/Chelsea/Chelsea-II.woff") format("woff"); }
+@font-face {
+  font-family: "Chelsea-solid";
+  src: url("../fonts/Chelsea/Chelsea-III.woff") format("woff"); }
 html, body, ul, ol {
   margin: 0;
   padding: 0; }
@@ -77,6 +86,13 @@ nav {
   background-color: #eee;
   height: 100px; }
   .contact .contact-info {
-    text-align: center; }
+    margin: 0px auto; }
+    .contact .contact-info .chelsea-1 {
+      font-family: Chelsea, Fallback, sans-serif;
+      font-weight: 900; }
+    .contact .contact-info .chelsea-2 {
+      font-family: Chelsea-bold, Fallback, sans-serif; }
+    .contact .contact-info .chelsea-3 {
+      font-family: Chelsea-solid, Fallback, sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
