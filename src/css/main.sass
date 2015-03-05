@@ -41,7 +41,6 @@ $champaign: #f7e7ce
 nav 
 	width: 100%
 	top: 0px
-	background-color: $champaign
 	border-bottom: 3px solid $purple
 	font-size: 16pt
 
@@ -50,6 +49,10 @@ nav
 
 	@media (max-width: 767px)
 		font-size: 8pt
+
+	.nav-bar
+		border-bottom: 3px solid $purple
+		background-color: $champaign
 
 	h1
 		text-align: center
@@ -61,9 +64,6 @@ nav
 		span
 			font-size: 1.15em
 			font-weight: 600
-
-	.nav-menu 
-		text-align: right
 
 	a
 		text-decoration: none
@@ -90,6 +90,30 @@ nav
 				color: $purple
 				cursor: pointer
 				text-decoration: none
+	.nav-menu 
+		text-align: center
+		width: 100%
+		background-color: $purple
+
+		ul
+			list-style: none
+			color: $purple
+			width: 100%
+			background-color: $champaign
+
+			a
+				text-decoration: none
+
+				&:hover, &:visited
+					text-decoration: none
+					color: $purple
+
+				li
+					border: 1px solid $purple
+					font-size: 1.25em
+					font-weight: 600
+					width: 100%
+
 
 
 .main-container 

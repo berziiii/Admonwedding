@@ -1,3 +1,11 @@
+
+// Toggle Nav Menu //
+$('#toggleNavMenu').on('click', function () {
+  $('#nav-collapse').collapse('toggle')
+});
+
+
+// Hotel Modal //
 $('#openHotelModal').on('click', function () {
 	$('#hotel-modal').modal('show')
 });

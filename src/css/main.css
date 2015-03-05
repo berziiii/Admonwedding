@@ -30,7 +30,6 @@ html, body, ul, ol {
 nav {
   width: 100%;
   top: 0px;
-  background-color: #f7e7ce;
   border-bottom: 3px solid #270233;
   font-size: 16pt; }
   @media (max-width: 992px) and (min-width: 767px) {
@@ -39,6 +38,9 @@ nav {
   @media (max-width: 767px) {
     nav {
       font-size: 8pt; } }
+  nav .nav-bar {
+    border-bottom: 3px solid #270233;
+    background-color: #f7e7ce; }
   nav h1 {
     text-align: center;
     color: #270233;
@@ -48,8 +50,6 @@ nav {
     nav h1 span {
       font-size: 1.15em;
       font-weight: 600; }
-  nav .nav-menu {
-    text-align: right; }
   nav a {
     text-decoration: none;
     cursor: pointer;
@@ -73,6 +73,25 @@ nav {
         color: #270233;
         cursor: pointer;
         text-decoration: none; }
+  nav .nav-menu {
+    text-align: center;
+    width: 100%;
+    background-color: #270233; }
+    nav .nav-menu ul {
+      list-style: none;
+      color: #270233;
+      width: 100%;
+      background-color: #f7e7ce; }
+      nav .nav-menu ul a {
+        text-decoration: none; }
+        nav .nav-menu ul a:hover, nav .nav-menu ul a:visited {
+          text-decoration: none;
+          color: #270233; }
+        nav .nav-menu ul a li {
+          border: 1px solid #270233;
+          font-size: 1.25em;
+          font-weight: 600;
+          width: 100%; }
 
 .main-container {
   width: 100%;
