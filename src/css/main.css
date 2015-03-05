@@ -30,15 +30,24 @@ html, body, ul, ol {
 nav {
   width: 100%;
   top: 0px;
-  background-color: #eee;
-  border-bottom: 2px solid #270233;
-  opacity: 0.9;
-  position: fixed; }
-  nav .nav-image {
-    line-height: 80px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    width: 100%; }
+  background-color: #f7e7ce;
+  border-bottom: 3px solid #270233;
+  font-size: 16pt; }
+  @media (max-width: 992px) and (min-width: 767px) {
+    nav {
+      font-size: 10pt; } }
+  @media (max-width: 767px) {
+    nav {
+      font-size: 8pt; } }
+  nav h1 {
+    text-align: center;
+    color: #270233;
+    font-family: Chelsea-bold;
+    font-size: 2.5em;
+    margin: 5px 0px; }
+    nav h1 span {
+      font-size: 1.15em;
+      font-weight: 600; }
   nav .nav-menu {
     text-align: right; }
   nav a {
@@ -56,7 +65,7 @@ nav {
       color: #270233;
       text-decoration: none; }
     nav a .glyphicon-menu-hamburger {
-      font-size: 25pt;
+      font-size: 2em;
       position: absolute;
       right: 10%;
       top: 15px; }
@@ -65,34 +74,269 @@ nav {
         cursor: pointer;
         text-decoration: none; }
 
-.save-the-date {
-  background: url(../images/save-the-date.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: bottom 50px; }
-
 .main-container {
-  width: 100%; }
-  .main-container .hero-container {
-    width: 100%;
-    height: 750px;
-    overflow: hidden; }
-
-.contact {
   width: 100%;
-  background-color: #eee;
-  height: 100px; }
-  .contact .contact-info {
-    margin: 0px auto; }
-    .contact .contact-info .chelsea-1 {
-      font-family: Chelsea, Fallback, sans-serif;
+  background-color: #f7e7ce;
+  font-size: 16pt; }
+  @media (max-width: 992px) {
+    .main-container {
+      font-size: 14pt; } }
+  @media (max-width: 767px) {
+    .main-container {
+      font-size: 12pt; } }
+
+.hero-container {
+  width: 100%;
+  background-color: #270233;
+  text-align: center;
+  margin: 0px auto; }
+  .hero-container .hero-image-wrapper {
+    width: 90%;
+    margin: 0px auto;
+    padding: 50px 25px; }
+    @media (max-width: 992px) {
+      .hero-container .hero-image-wrapper {
+        width: 100%;
+        padding: 50px 0px; } }
+    @media (max-width: 767px) {
+      .hero-container .hero-image-wrapper {
+        padding: 25px 0px; } }
+    .hero-container .hero-image-wrapper .hero-image {
+      width: 100%;
+      background-color: #f7e7ce;
+      padding: 10px; }
+      @media (max-width: 992px) {
+        .hero-container .hero-image-wrapper .hero-image {
+          padding: 0px; } }
+  .hero-container .hero-content {
+    font-family: Chelsea;
+    text-align: center;
+    color: #f7e7ce;
+    padding-bottom: 50px; }
+    @media (max-width: 992px) {
+      .hero-container .hero-content {
+        padding-bottom: 10px; } }
+    .hero-container .hero-content h1 {
+      font-size: 2.75em;
+      font-weight: 600; }
+      @media (max-width: 500px) {
+        .hero-container .hero-content h1 {
+          font-size: 1.75em; } }
+    .hero-container .hero-content h2 {
+      font-size: 1.5em; }
+      @media (max-width: 500px) {
+        .hero-container .hero-content h2 {
+          font-size: 1em; } }
+
+.travel-container {
+  width: 100%;
+  background-color: #f7e7ce;
+  font-family: Chelsea-bold;
+  color: #270233;
+  padding-bottom: 75px; }
+  @media (max-width: 992px) {
+    .travel-container {
+      padding-bottom: 50px; } }
+  @media (max-width: 767px) {
+    .travel-container {
+      padding-bottom: 25px; } }
+  .travel-container .travel-wrapper {
+    text-align: center; }
+    .travel-container .travel-wrapper a {
+      text-decoration: none;
+      color: #270233;
+      cursor: pointer; }
+      .travel-container .travel-wrapper a:hover, .travel-container .travel-wrapper a:visited {
+        text-decoration: underline;
+        color: #270233; }
+    .travel-container .travel-wrapper h1 {
+      font-size: 2.75em;
+      margin: 50px 0px;
+      text-decoration: underline; }
+      @media (max-width: 992px) {
+        .travel-container .travel-wrapper h1 {
+          padding: 25px 0px;
+          margin: 10px 0px;
+          font-size: 1.75em; } }
+    .travel-container .travel-wrapper h2 {
+      font-size: 1.5em;
+      font-weight: 600; }
+      @media (max-width: 992px) {
+        .travel-container .travel-wrapper h2 {
+          font-size: 1.25em; } }
+      @media (max-width: 767px) {
+        .travel-container .travel-wrapper h2 {
+          font-size: 1em; } }
+    .travel-container .travel-wrapper h3 {
+      font-weight: 600;
+      font-style: italic;
+      margin-bottom: 50px; }
+      @media (max-width: 992px) {
+        .travel-container .travel-wrapper h3 {
+          font-size: 1.25em;
+          margin-bottom: 25px; } }
+      @media (max-width: 767px) {
+        .travel-container .travel-wrapper h3 {
+          font-size: 1em;
+          margin-bottom: 15px; } }
+    .travel-container .travel-wrapper span {
+      font-size: 3em;
+      margin: 25px 0px; }
+      @media (max-width: 992px) {
+        .travel-container .travel-wrapper span {
+          font-size: 2.5em;
+          margin: 15px 0px; } }
+      @media (max-width: 767px) {
+        .travel-container .travel-wrapper span {
+          font-size: 2em;
+          margin: 10px 0px; } }
+    .travel-container .travel-wrapper p {
+      font-family: Chelsea-bold;
+      text-align: left;
+      font-size: 1em;
+      font-weight: 900;
+      padding: 25px 0px; }
+      @media (max-width: 992px) {
+        .travel-container .travel-wrapper p {
+          padding: 15px 0px; } }
+    .travel-container .travel-wrapper .airport-wrapper h4, .travel-container .travel-wrapper .hotel-wrapper h4 {
+      font-style: italic;
       font-weight: 900; }
-    .contact .contact-info .chelsea-2 {
-      font-family: Chelsea-bold, Fallback, sans-serif; }
-    .contact .contact-info .chelsea-3 {
-      font-family: Chelsea-solid, Fallback, sans-serif; }
+      @media (max-width: 992px) {
+        .travel-container .travel-wrapper .airport-wrapper h4, .travel-container .travel-wrapper .hotel-wrapper h4 {
+          font-size: 13pt; } }
+
+.contact-container {
+  width: 100%;
+  background-color: #270233;
+  text-align: center;
+  color: #f7e7ce;
+  padding: 50px 0px;
+  font-family: Chelsea-bold; }
+  @media (max-width: 992px) {
+    .contact-container {
+      padding: 25px 0px; } }
+  @media (max-width: 767px) {
+    .contact-container {
+      padding: 15px 0px; } }
+  .contact-container a {
+    color: #270233;
+    cursor: pointer; }
+    .contact-container a:hover, .contact-container a:visited {
+      color: #270233;
+      text-decoration: underline; }
+  .contact-container h1 {
+    font-size: 2.75em;
+    text-decoration: underline;
+    margin: 50px 0px; }
+    @media (max-width: 992px) {
+      .contact-container h1 {
+        margin: 20px 0px;
+        font-size: 2.5em; } }
+    @media (max-width: 767px) {
+      .contact-container h1 {
+        margin: 10px 0px;
+        font-size: 2em; } }
+  .contact-container h2 {
+    color: #270233;
+    text-align: center;
+    font-weight: 600; }
+  .contact-container h4 {
+    color: #270233;
+    font-weight: 600; }
+  .contact-container h5 {
+    font-size: 1.5em;
+    text-decoration: underline;
+    font-weight: 600;
+    margin: 25px 0px; }
+  .contact-container #container {
+    background-color: #f7e7ce;
+    text-align: center;
+    border-radius: 5px; }
+    @media (max-width: 767px) {
+      .contact-container #container {
+        width: 100%; } }
+    .contact-container #container ul {
+      text-align: left;
+      margin: 0px auto; }
+      .contact-container #container ul li {
+        margin: 0px auto;
+        padding: 15px; }
+        .contact-container #container ul li label {
+          color: #270233;
+          font-size: 16pt; }
+        .contact-container #container ul li input {
+          width: 100%;
+          font-size: 12pt;
+          font-family: Chelsea; }
+        .contact-container #container ul li textarea {
+          font-size: 12pt;
+          font-family: Chelsea; }
+        .contact-container #container ul li h6 {
+          text-align: center;
+          color: red;
+          font-size: 0.75em; }
+        .contact-container #container ul li #saveForm {
+          color: #f7e7ce;
+          background-color: #270233;
+          font-size: 16pt; }
+
+@media (max-width: 992px) {
+  .modal-dialog {
+    width: 75%;
+    margin: 0px auto; } }
+
+.modal-hotel, .modal-content {
+  background-color: #f7e7ce;
+  text-align: center;
+  color: #270233;
+  font-family: Chelsea-bold;
+  font-weight: 600;
+  font-size: 16pt; }
+  @media (max-width: 992px) {
+    .modal-hotel, .modal-content {
+      font-size: 12pt;
+      padding: 5px; } }
+  @media (max-width: 767px) {
+    .modal-hotel, .modal-content {
+      font-size: 10pt; } }
+  .modal-hotel a, .modal-content a {
+    text-decoration: none;
+    color: #270233; }
+    @media (max-width: 992px) {
+      .modal-hotel a, .modal-content a {
+        text-decoration: underline; } }
+    .modal-hotel a:hover, .modal-hotel a:visited, .modal-content a:hover, .modal-content a:visited {
+      text-decoration: underline;
+      color: #270233; }
+  .modal-hotel div, .modal-content div {
+    border-top: 2px solid #270233;
+    padding: 25px; }
+  .modal-hotel h3, .modal-content h3 {
+    font-size: 1.75em;
+    font-weight: 600;
+    margin: 25px 0px; }
+  .modal-hotel h4, .modal-content h4 {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin: 5px 0px;
+    font-family: Chelsea; }
+  .modal-hotel h5, .modal-content h5 {
+    font-size: 1em;
+    font-weight: 600;
+    margin: 15px 0px;
+    font-family: Chelsea;
+    font-style: italic; }
+
+.footer-container {
+  width: 100%;
+  background-color: #f7e7ce;
+  font-family: Chelsea-bold;
+  color: #270233;
+  text-align: center;
+  padding: 5px 0px; }
+  @media (max-width: 767px) {
+    .footer-container h4 {
+      font-size: 10pt; } }
 
 /*# sourceMappingURL=main.css.map */
