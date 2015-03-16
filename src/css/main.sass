@@ -11,6 +11,10 @@
 	font-family: 'Chelsea-solid'
 	src: url('../fonts/Chelsea/Chelsea-III.woff') format('woff')
 
+@font-face
+	font-family: 'Glyphicons-Regular'
+	src: url('../fonts/GLYPHICONS-Regular.woff') format('woff')
+
 html, body, ul, ol
 	margin: 0
 	padding: 0
@@ -33,7 +37,45 @@ $purple: #270233
 
 $white: #eee
 
-$champaign: #f7e7ce
+$champagne: #f7e7ce
+
+$gold: #E0C389
+
+.glyphicons 
+	position: relative
+	top: 1px
+	display: inline-block
+	font-family: 'Glyphicons-Regular'
+	font-style: normal
+	font-weight: normal
+	line-height: 1
+	vertical-align: top
+	speak: none
+	-webkit-font-smoothing: antialiased
+
+.glyphicons-menu-hamburger:before 
+	content: "\e517"
+
+.glyphicons-marriage:before 
+	content: "\e480"
+
+.glyphicons-heart-empty:before 
+	content: "\e020"
+
+.glyphicons-airplane:before 
+	content: "\2708"
+
+.glyphicons-gift:before 
+	content: "\e070"
+
+.glyphicons-heart:before 
+	content: "\e013"
+
+.glyphicons-chevron-left:before 
+	content: "\e225"
+
+.glyphicons-chevron-right:before 
+	content: "\e224"
 
 
 /* Module Classes
@@ -50,9 +92,15 @@ nav
 	@media (max-width: 767px)
 		font-size: 8pt
 
+	@media (max-width: 400px)
+		font-size: 6pt
+
 	.nav-bar
 		border-bottom: 3px solid $purple
-		background-color: $champaign
+		background-color: $champagne
+
+	.home-title
+		text-align: center
 
 	h1
 		text-align: center
@@ -60,6 +108,9 @@ nav
 		font-family: Chelsea-bold
 		font-size: 2.5em
 		margin: 5px 0px
+
+		@media (max-width: 992px)
+			text-align: left
 
 		span
 			font-size: 1.15em
@@ -81,7 +132,7 @@ nav
 			color: $purple
 			text-decoration: none
 
-		.glyphicon-menu-hamburger
+		.glyphicons-menu-hamburger
 			font-size: 2em
 			position: absolute
 			right: 10%
@@ -90,6 +141,10 @@ nav
 				color: $purple
 				cursor: pointer
 				text-decoration: none
+
+			@media (max-width: 992px)
+				top: 10px
+
 	.nav-menu 
 		text-align: center
 		width: 100%
@@ -99,7 +154,7 @@ nav
 			list-style: none
 			color: $purple
 			width: 100%
-			background-color: $champaign
+			background-color: $champagne
 
 			a
 				text-decoration: none
@@ -110,15 +165,21 @@ nav
 
 				li
 					border: 1px solid $purple
-					font-size: 1.25em
+					font-size: 1.5em
 					font-weight: 600
 					width: 100%
+
+					@media (max-width: 992px)
+						font-size: 2.5em
+
+					@media (max-width: 767px)
+						font-size: 3em
 
 
 
 .main-container 
 	width: 100%
-	background-color: $champaign
+	background-color: $champagne
 	font-size: 16pt
 
 	@media (max-width: 992px)
@@ -148,7 +209,7 @@ nav
 
 		.hero-image
 			width: 100%
-			background-color: $champaign
+			background-color: $champagne
 			padding: 10px
 
 			@media (max-width: 992px)
@@ -157,27 +218,220 @@ nav
 	.hero-content
 		font-family: Chelsea
 		text-align: center
-		color: $champaign
+		color: $champagne
 		padding-bottom: 50px
+		border-bottom: 2px solid $champagne
 
 		@media (max-width: 992px)
 			padding-bottom: 10px
 
 		h1
-			font-size: 2.75em
+			font-size: 2em
 			font-weight: 600
 
 			@media (max-width: 500px)
-				font-size: 1.75em
-		h2
-			font-size: 1.5em
+				font-size: 1.5em
+		span
+			font-size: 2em
+			font-weight: 600
 
 			@media (max-width: 500px)
-				font-size: 1em
+				font-size: 1.5em
+
+		h2
+			font-size: 1.75em
+			font-weight: 600
+
+			@media (max-width: 500px)
+				font-size: 1.25em
+
+	.home-links
+		color: $champagne
+		padding: 3em 0em 5em 0em
+
+		a
+			text-align: center
+			color: $champagne
+			font-size: 1.5em
+			text-decoration: none
+			cursor: pointer
+
+			&:hover
+				.glyphicons, h4
+					color: $gold
+
+			.glyphicons
+				font-size: 1.75em
+				padding-bottom: 20px
+		h4
+			font-weight: 600
+			font-family: Chelsea-bold
+
+
+.footer-container
+	width: 100%
+	background-color: $champagne
+	font-family: Chelsea-bold
+	color: $purple
+	text-align: center
+	padding: 5px 0px
+	border-top: 3px solid $purple
+
+	h4
+		@media (max-width: 767px)
+			font-size: 10pt
+
+
+
+
+//================EVENTS===================//
+
+
+
+
+.events-container
+	width: 100%
+	background-color: $purple
+	background: url(../images/save-the-date.png) no-repeat center center
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	font-size: 16pt
+	padding-bottom: 50px
+
+	@media (max-width: 992px)
+		font-size: 14pt
+
+	@media (max-width: 767px)
+		font-size: 12.5pt
+
+	h1
+		font-size: 2.25em
+		font-weight: 600
+		font-family: Chelsea-solid
+		padding: 10px 0px
+
+	.slide-wrapper
+		width: 80%
+		margin: 0px auto
+
+		@media (max-width: 767px)
+			width: 100%
+
+		img
+			width: 100%
+			border: 3px solid $gold
+
+		.event-wrapper
+			background-color: rgba(39, 2, 51, .8)
+
+			.event-info
+				border-left: 2px solid $gold
+
+				@media (max-width: 767px)
+					border-left: 0px solid $gold
+
+			.event-info, .event-date
+				font-family: Chelsea-solid
+				color: $champagne
+				z-index: 2000
+				opacity: 1
+				text-align: left
+				margin: 10px 0px
+				padding-left: 30px
+
+				h5
+					font-size: 1em
+
+					a
+						text-decoration: none
+						color: $champagne
+						cursor: pointer
+
+						&:hover, &:visited
+							text-decoration: underline
+							color: $champagne
+
+				span
+					font-weight: 600
+					font-size: .85em
+					font-family: Chelsea-solid
+					color: $gold
+
+				iframe
+					width: 95%
+					height: 225px
+					margin: 0px auto
+					border: 2 solid $gold
+					border-radius: 5px
+
+				h2
+					font-weight: 600
+					font-size: 1.75em
+					font-family: Chelsea-solid
+					color: $gold
+					text-decoration: underline
+
+				p
+					font-family: Chelsea
+					font-size: .85em
+					font-weight: 600
+
+					a
+						text-decoration: none
+						color: $gold
+						cursor: pointer
+
+						&:hover, &:visited
+							text-decoration: underline
+							color: $gold
+
+
+.carousel-indicators
+	bottom: 0px
+
+.carousel-control
+	margin: 0px auto
+	line-height: auto
+
+.glyphicons-chevron-left, .glyphicons-chevron-right
+	font-size: 2em
+	position: absolute
+	display: inline-block
+	z-index: 2000
+	top: 50%
+	margin-top: -1em
+
+.glyphicons-chevron-left 
+	left: 50%
+	margin-left: -10px
+
+	@media (max-width: 767px)
+		font-size: 1.5em
+		left: 0%
+		margin-left: 0px
+
+.glyphicons-chevron-right 
+	right: 50%
+	margin-right: -10px
+
+	@media (max-width: 992px)
+		font-size: 1.5em
+		right: 0%
+		margin-right: 8px
+
+
+
+
+//================TRAVEL===================//
+
+
+
 
 .travel-container
 	width: 100%
-	background-color: $champaign
+	background-color: $champagne
 	font-family: Chelsea-bold
 	color: $purple
 	padding-bottom: 75px
@@ -267,7 +521,7 @@ nav
 	width: 100%
 	background-color: $purple
 	text-align: center
-	color: $champaign
+	color: $champagne
 	padding: 50px 0px
 	font-family: Chelsea-bold
 
@@ -314,7 +568,7 @@ nav
 		margin: 25px 0px
 
 	#container
-		background-color: $champaign
+		background-color: $champagne
 		text-align: center
 		border-radius: 5px
 
@@ -348,7 +602,7 @@ nav
 					font-size: .75em
 
 				#saveForm
-					color: $champaign
+					color: $champagne
 					background-color: $purple
 					font-size: 16pt
 
@@ -358,7 +612,7 @@ nav
 		margin: 0px auto
 
 .modal-hotel, .modal-content
-	background-color: $champaign
+	background-color: $champagne
 	text-align: center
 	color: $purple
 	font-family: Chelsea-bold
@@ -404,18 +658,6 @@ nav
 		font-family: Chelsea
 		font-style: italic
 				
-
-.footer-container
-	width: 100%
-	background-color: $champaign
-	font-family: Chelsea-bold
-	color: $purple
-	text-align: center
-	padding: 5px 0px
-
-	h4
-		@media (max-width: 767px)
-			font-size: 10pt
 
 
 
