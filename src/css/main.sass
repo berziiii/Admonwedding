@@ -33,6 +33,7 @@ html, body, ul, ol
 	-o-sizing: border-box
 	box-sizing: border-box
 
+
 $purple: #270233
 
 $white: #eee
@@ -77,8 +78,22 @@ $gold: #E0C389
 .glyphicons-chevron-right:before 
 	content: "\e224"
 
+.hide
+	display: none
 
-/* Module Classes
+.center 
+	margin: auto
+	position: absolute
+	top: 0 
+	left: 0 
+	bottom: 0 
+	right: 0
+
+
+//===============Module Classes==================//
+
+body
+	background-color: $purple
 
 nav 
 	width: 100%
@@ -175,6 +190,7 @@ nav
 					@media (max-width: 767px)
 						font-size: 3em
 
+//===================HOME======================//
 
 
 .main-container 
@@ -263,9 +279,19 @@ nav
 			.glyphicons
 				font-size: 1.75em
 				padding-bottom: 20px
+				-webkit-transition: color 0.3s ease
+				-moz-transition: color 0.3s ease
+				-ms-transition: color 0.3s ease
+				-o-transition: color 0.3s ease
+				transition: color 0.3s ease
 		h4
 			font-weight: 600
 			font-family: Chelsea-bold
+			-webkit-transition: color 0.3s ease
+			-moz-transition: color 0.3s ease
+			-ms-transition: color 0.3s ease
+			-o-transition: color 0.3s ease
+			transition: color 0.3s ease
 
 
 .footer-container
@@ -307,10 +333,10 @@ nav
 		font-size: 12.5pt
 
 	h1
-		font-size: 2.25em
-		font-weight: 600
-		font-family: Chelsea-solid
+		font-size: 2.75em
+		font-family: Chelsea-bold
 		padding: 10px 0px
+		text-decoration: underline
 
 	.slide-wrapper
 		width: 80%
@@ -348,6 +374,11 @@ nav
 						text-decoration: none
 						color: $champagne
 						cursor: pointer
+						-webkit-transition: all 0.3s ease
+						-moz-transition: all 0.3s ease
+						-ms-transition: all 0.3s ease
+						-o-transition: all 0.3s ease
+						transition: all 0.3s ease
 
 						&:hover, &:visited
 							text-decoration: underline
@@ -382,6 +413,11 @@ nav
 						text-decoration: none
 						color: $gold
 						cursor: pointer
+						-webkit-transition: all 0.3s ease
+						-moz-transition: all 0.3s ease
+						-ms-transition: all 0.3s ease
+						-o-transition: all 0.3s ease
+						transition: all 0.3s ease
 
 						&:hover, &:visited
 							text-decoration: underline
@@ -431,28 +467,22 @@ nav
 
 .travel-container
 	width: 100%
-	background-color: $champagne
+	background-color: $purple
 	font-family: Chelsea-bold
-	color: $purple
+	color: $champagne
 	padding-bottom: 75px
+	font-size: 16pt
 
 	@media (max-width: 992px)
+		font-size: 12pt
 		padding-bottom: 50px
 
 	@media (max-width: 767px)
+		font-size: 10pt
 		padding-bottom: 25px
 
 	.travel-wrapper
 		text-align: center
-
-		a
-			text-decoration: none
-			color: $purple
-			cursor: pointer
-
-			&:hover, &:visited
-				text-decoration: underline
-				color: $purple
 
 		h1
 			font-size: 2.75em
@@ -501,20 +531,309 @@ nav
 
 			font-family: Chelsea-bold
 			text-align: left
-			font-size: 1em
+			font-size: .9em
 			font-weight: 900
 			padding: 25px 0px
+			margin-top: 10px
 
 			@media (max-width: 992px)
 				padding: 15px 0px
 
 		.airport-wrapper, .hotel-wrapper
-			h4
-				font-style: italic
-				font-weight: 900
+			h2
+				margin-bottom: 30px
 
-				@media (max-width: 992px)
-					font-size: 13pt
+			a
+				text-decoration: none
+				color: $champagne
+				cursor: pointer
+
+				&:hover
+					color: $gold
+
+					.travel-btn
+						background-color: $gold
+						color: $purple
+
+			.travel-btn
+				padding: 10px 30px
+				font-weight: 600
+				border: 1px solid $gold
+				font-size: 1.25em
+				margin: 20px 0px
+				-webkit-transition: all 0.3s ease
+				-moz-transition: all 0.3s ease
+				-ms-transition: all 0.3s ease
+				-o-transition: all 0.3s ease
+				transition: all 0.3s ease
+
+.modal-dialog
+	width: 85%
+
+	@media (max-width: 992px)
+		width: 75%
+		margin: 0px auto
+
+.modal-hotel, .modal-content
+	background-color: $champagne
+	text-align: center
+	color: $purple
+	font-family: Chelsea-bold
+	font-weight: 600
+	font-size: 16pt
+
+	@media (max-width: 992px)
+		font-size: 12pt
+		padding: 5px
+
+	@media (max-width: 767px)
+		font-size: 10pt
+
+	h1
+		font-size: 3em
+		text-decoration: underline
+		padding-bottom: 50px
+
+		@media (max-width: 992px)
+			padding-bottom: 20px
+
+		@media (max-width: 767px)
+			padding-bottom: 10px
+	a
+		text-decoration: none
+		color: $purple
+		padding: 10px 25px
+		font-size: 1em
+		border: 1px solid $purple
+		-webkit-transition: all 0.3s ease
+		-moz-transition: all 0.3s ease
+		-ms-transition: all 0.3s ease
+		-o-transition: all 0.3s ease
+		transition: all 0.3s ease
+
+		@media (max-width: 992px)
+			padding: 15px 40px
+
+		@media (max-width: 772px)
+			padding: 20px 45px
+			font-size: 1.25em
+
+		&:hover 
+			color: $gold
+			background-color: $purple
+			border: 1px solid $purple
+
+	h2
+		font-size: 1.5em
+		font-weight: 600
+		margin: 15px 0px -20px 0px
+
+	h3
+		font-size: 1.25em
+		font-family: Chelsea
+		font-weight: 600
+		margin: 30px 0px
+
+	h4
+		font-size: 1.3em
+		font-family: Chelsea-bold
+		font-weight: 600
+		margin: 40px 0px
+
+		@media (max-width: 767px)
+			margin: 20px 0px
+
+	h5
+		font-size: .9em
+		font-weight: 600
+		margin: 30px 0px
+		font-family: Chelsea-solid
+		font-style: italic
+
+
+
+
+
+//==================BRIDAL PARTY===================//
+
+
+
+.bridal-container
+	background-color: $purple
+	width: 100%
+	font-size: 16pt
+	padding-bottom: 50px
+
+	h1
+		margin: 0px 0px 50px 0px
+		padding: 25px 0px
+		color: $champagne
+		font-size: 3em
+		font-family: Chelsea-bold
+		text-decoration: underline
+
+	.bridal-member
+		position: relative
+		background-color: $gold
+
+		&:hover
+			img
+				opacity: .2
+				-webkit-transition: opacity 0.5s ease
+				-moz-transition: opacity 0.5s ease
+				-ms-transition: opacity 0.5s ease
+				-o-transition: opacity 0.5s ease
+				transition: opacity 0.5s ease
+
+			.caption
+				display: inline-block
+				color: $purple
+				font-family: Chelsea-bold
+				font-weight: 600
+				font-size: 1.25em
+				top: 40%
+				-webkit-transition: opacity 0.5s ease
+				-moz-transition: opacity 0.5s ease
+				-ms-transition: opacity 0.5s ease
+				-o-transition: opacity 0.5s ease
+				transition: opacity 0.5s ease
+
+		img
+			width: 100%
+
+		.caption
+			display: none
+
+			.name
+				font-size: 1.65em
+				font-weight: 600
+
+			.title
+				font-size: 1.25em
+				font-family: Chelsea
+
+
+
+
+
+
+//==================REGISTRY===================//
+
+
+
+.registry-container
+	width: 100%
+	background-color: $purple
+	margin-top: -20px
+	font-size: 16pt
+	padding-bottom: 20px
+
+	@media (max-width: 992px)
+		font-size: 12pt
+
+	@media (max-width: 767px)
+		font-size: 10px
+
+	h1
+		padding: 30px 0px
+		color: $champagne
+		font-family: Chelsea-bold
+		font-size: 2.75em
+		text-decoration: underline
+
+		@media (max-width: 992px)
+			padding: 15px 0px
+
+		@media (max-width: 767px)
+			padding: 10px 0px
+
+	.registry-wrapper
+		margin: 50px 0px
+
+		@media (max-width: 992px)
+			margin: 25px 0px
+
+		@media (max-width: 992px)
+			margin: 10px 0px
+
+	.registry-link
+		padding: 60px 0px
+
+		img
+			width: 60%
+
+
+
+//==================MEMORIAM===================//
+
+
+.memoriam-container
+	background-color: $purple
+	width: 100%
+	font-size: 16pt
+	padding-bottom: 50px
+
+	h1
+		margin: 0px 0px 50px 0px
+		padding: 25px 0px
+		color: $champagne
+		font-size: 3em
+		font-family: Chelsea-bold
+		text-decoration: underline
+
+	.memoriam-member
+		position: relative
+		background-color: $gold
+
+		&:hover
+			img
+				opacity: .2
+				-webkit-transition: opacity 0.5s ease
+				-moz-transition: opacity 0.5s ease
+				-ms-transition: opacity 0.5s ease
+				-o-transition: opacity 0.5s ease
+				transition: opacity 0.5s ease
+
+			.caption
+				display: inline-block
+				color: $purple
+				font-family: Chelsea-bold
+				font-weight: 600
+				font-size: 1.25em
+				top: 40%
+				-webkit-transition: opacity 0.5s ease
+				-moz-transition: opacity 0.5s ease
+				-ms-transition: opacity 0.5s ease
+				-o-transition: opacity 0.5s ease
+				transition: opacity 0.5s ease
+
+		img
+			width: 100%
+
+		.caption
+			display: none
+
+			.name
+				font-size: 1.65em
+				font-weight: 600
+
+			.title
+				font-size: 1.25em
+				font-family: Chelsea
+
+	.memoriam-content
+		margin: 75px 15px
+		font-family: Chelsea-bold
+		font-weight: 600
+		font-size: .9em
+		color: $champagne
+		text-align: left
+
+
+
+//==================CONTACT===================//
+
+
 
 
 .contact-container
@@ -522,8 +841,9 @@ nav
 	background-color: $purple
 	text-align: center
 	color: $champagne
-	padding: 50px 0px
-	font-family: Chelsea-bold
+	padding: 15px 0px 50px 0px
+	font-size: 16pt
+	font-family: Chelsea
 
 	@media (max-width: 992px)
 		padding: 25px 0px
@@ -540,17 +860,18 @@ nav
 			text-decoration: underline
 
 	h1
-		font-size: 2.75em
+		font-size: 2.5em
 		text-decoration: underline
-		margin: 50px 0px
+		font-family: Chelsea-bold
+		padding-bottom: 20px
 
 		@media (max-width: 992px)
 			margin: 20px 0px
-			font-size: 2.5em
+			font-size: 2em
 
 		@media (max-width: 767px)
 			margin: 10px 0px
-			font-size: 2em
+			font-size: 1.75em
 
 	h2
 		color: $purple
@@ -605,61 +926,5 @@ nav
 					color: $champagne
 					background-color: $purple
 					font-size: 16pt
-
-.modal-dialog
-	@media (max-width: 992px)
-		width: 75%
-		margin: 0px auto
-
-.modal-hotel, .modal-content
-	background-color: $champagne
-	text-align: center
-	color: $purple
-	font-family: Chelsea-bold
-	font-weight: 600
-	font-size: 16pt
-
-	@media (max-width: 992px)
-		font-size: 12pt
-		padding: 5px
-
-	@media (max-width: 767px)
-		font-size: 10pt
-
-	a
-		text-decoration: none
-		color: $purple
-
-		@media (max-width: 992px)
-			text-decoration: underline
-
-		&:hover, &:visited
-			text-decoration: underline
-			color: $purple
-	div
-		border-top: 2px solid $purple
-		padding: 25px
-
-	h3
-		font-size: 1.75em
-		font-weight: 600
-		margin: 25px 0px
-
-	h4
-		font-size: 1.25em
-		font-weight: 600
-		margin: 5px 0px
-		font-family: Chelsea
-
-	h5
-		font-size: 1em
-		font-weight: 600
-		margin: 15px 0px
-		font-family: Chelsea
-		font-style: italic
-				
-
-
-
-
+			
 

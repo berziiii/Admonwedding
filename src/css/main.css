@@ -66,7 +66,20 @@ html, body, ul, ol {
 .glyphicons-chevron-right:before {
   content: ""; }
 
-/* Module Classes */
+.hide {
+  display: none; }
+
+.center {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+body {
+  background-color: #270233; }
+
 nav {
   width: 100%;
   top: 0px;
@@ -224,10 +237,20 @@ nav {
         color: #E0C389; }
       .hero-container .home-links a .glyphicons {
         font-size: 1.75em;
-        padding-bottom: 20px; }
+        padding-bottom: 20px;
+        -webkit-transition: color 0.3s ease;
+        -moz-transition: color 0.3s ease;
+        -ms-transition: color 0.3s ease;
+        -o-transition: color 0.3s ease;
+        transition: color 0.3s ease; }
     .hero-container .home-links h4 {
       font-weight: 600;
-      font-family: Chelsea-bold; }
+      font-family: Chelsea-bold;
+      -webkit-transition: color 0.3s ease;
+      -moz-transition: color 0.3s ease;
+      -ms-transition: color 0.3s ease;
+      -o-transition: color 0.3s ease;
+      transition: color 0.3s ease; }
 
 .footer-container {
   width: 100%;
@@ -258,10 +281,10 @@ nav {
     .events-container {
       font-size: 12.5pt; } }
   .events-container h1 {
-    font-size: 2.25em;
-    font-weight: 600;
-    font-family: Chelsea-solid;
-    padding: 10px 0px; }
+    font-size: 2.75em;
+    font-family: Chelsea-bold;
+    padding: 10px 0px;
+    text-decoration: underline; }
   .events-container .slide-wrapper {
     width: 80%;
     margin: 0px auto; }
@@ -291,7 +314,12 @@ nav {
           .events-container .slide-wrapper .event-wrapper .event-info h5 a, .events-container .slide-wrapper .event-wrapper .event-date h5 a {
             text-decoration: none;
             color: #f7e7ce;
-            cursor: pointer; }
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
             .events-container .slide-wrapper .event-wrapper .event-info h5 a:hover, .events-container .slide-wrapper .event-wrapper .event-info h5 a:visited, .events-container .slide-wrapper .event-wrapper .event-date h5 a:hover, .events-container .slide-wrapper .event-wrapper .event-date h5 a:visited {
               text-decoration: underline;
               color: #f7e7ce; }
@@ -319,7 +347,12 @@ nav {
           .events-container .slide-wrapper .event-wrapper .event-info p a, .events-container .slide-wrapper .event-wrapper .event-date p a {
             text-decoration: none;
             color: #E0C389;
-            cursor: pointer; }
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease;
+            -moz-transition: all 0.3s ease;
+            -ms-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease; }
             .events-container .slide-wrapper .event-wrapper .event-info p a:hover, .events-container .slide-wrapper .event-wrapper .event-info p a:visited, .events-container .slide-wrapper .event-wrapper .event-date p a:hover, .events-container .slide-wrapper .event-wrapper .event-date p a:visited {
               text-decoration: underline;
               color: #E0C389; }
@@ -359,25 +392,21 @@ nav {
 
 .travel-container {
   width: 100%;
-  background-color: #f7e7ce;
+  background-color: #270233;
   font-family: Chelsea-bold;
-  color: #270233;
-  padding-bottom: 75px; }
+  color: #f7e7ce;
+  padding-bottom: 75px;
+  font-size: 16pt; }
   @media (max-width: 992px) {
     .travel-container {
+      font-size: 12pt;
       padding-bottom: 50px; } }
   @media (max-width: 767px) {
     .travel-container {
+      font-size: 10pt;
       padding-bottom: 25px; } }
   .travel-container .travel-wrapper {
     text-align: center; }
-    .travel-container .travel-wrapper a {
-      text-decoration: none;
-      color: #270233;
-      cursor: pointer; }
-      .travel-container .travel-wrapper a:hover, .travel-container .travel-wrapper a:visited {
-        text-decoration: underline;
-        color: #270233; }
     .travel-container .travel-wrapper h1 {
       font-size: 2.75em;
       margin: 50px 0px;
@@ -422,26 +451,255 @@ nav {
     .travel-container .travel-wrapper p {
       font-family: Chelsea-bold;
       text-align: left;
-      font-size: 1em;
+      font-size: 0.9em;
       font-weight: 900;
-      padding: 25px 0px; }
+      padding: 25px 0px;
+      margin-top: 10px; }
       @media (max-width: 992px) {
         .travel-container .travel-wrapper p {
           padding: 15px 0px; } }
-    .travel-container .travel-wrapper .airport-wrapper h4, .travel-container .travel-wrapper .hotel-wrapper h4 {
-      font-style: italic;
-      font-weight: 900; }
-      @media (max-width: 992px) {
-        .travel-container .travel-wrapper .airport-wrapper h4, .travel-container .travel-wrapper .hotel-wrapper h4 {
-          font-size: 13pt; } }
+    .travel-container .travel-wrapper .airport-wrapper h2, .travel-container .travel-wrapper .hotel-wrapper h2 {
+      margin-bottom: 30px; }
+    .travel-container .travel-wrapper .airport-wrapper a, .travel-container .travel-wrapper .hotel-wrapper a {
+      text-decoration: none;
+      color: #f7e7ce;
+      cursor: pointer; }
+      .travel-container .travel-wrapper .airport-wrapper a:hover, .travel-container .travel-wrapper .hotel-wrapper a:hover {
+        color: #E0C389; }
+        .travel-container .travel-wrapper .airport-wrapper a:hover .travel-btn, .travel-container .travel-wrapper .hotel-wrapper a:hover .travel-btn {
+          background-color: #E0C389;
+          color: #270233; }
+    .travel-container .travel-wrapper .airport-wrapper .travel-btn, .travel-container .travel-wrapper .hotel-wrapper .travel-btn {
+      padding: 10px 30px;
+      font-weight: 600;
+      border: 1px solid #E0C389;
+      font-size: 1.25em;
+      margin: 20px 0px;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+
+.modal-dialog {
+  width: 85%; }
+  @media (max-width: 992px) {
+    .modal-dialog {
+      width: 75%;
+      margin: 0px auto; } }
+
+.modal-hotel, .modal-content {
+  background-color: #f7e7ce;
+  text-align: center;
+  color: #270233;
+  font-family: Chelsea-bold;
+  font-weight: 600;
+  font-size: 16pt; }
+  @media (max-width: 992px) {
+    .modal-hotel, .modal-content {
+      font-size: 12pt;
+      padding: 5px; } }
+  @media (max-width: 767px) {
+    .modal-hotel, .modal-content {
+      font-size: 10pt; } }
+  .modal-hotel h1, .modal-content h1 {
+    font-size: 3em;
+    text-decoration: underline;
+    padding-bottom: 50px; }
+    @media (max-width: 992px) {
+      .modal-hotel h1, .modal-content h1 {
+        padding-bottom: 20px; } }
+    @media (max-width: 767px) {
+      .modal-hotel h1, .modal-content h1 {
+        padding-bottom: 10px; } }
+  .modal-hotel a, .modal-content a {
+    text-decoration: none;
+    color: #270233;
+    padding: 10px 25px;
+    font-size: 1em;
+    border: 1px solid #270233;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    @media (max-width: 992px) {
+      .modal-hotel a, .modal-content a {
+        padding: 15px 40px; } }
+    @media (max-width: 772px) {
+      .modal-hotel a, .modal-content a {
+        padding: 20px 45px;
+        font-size: 1.25em; } }
+    .modal-hotel a:hover, .modal-content a:hover {
+      color: #E0C389;
+      background-color: #270233;
+      border: 1px solid #270233; }
+  .modal-hotel h2, .modal-content h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 15px 0px -20px 0px; }
+  .modal-hotel h3, .modal-content h3 {
+    font-size: 1.25em;
+    font-family: Chelsea;
+    font-weight: 600;
+    margin: 30px 0px; }
+  .modal-hotel h4, .modal-content h4 {
+    font-size: 1.3em;
+    font-family: Chelsea-bold;
+    font-weight: 600;
+    margin: 40px 0px; }
+    @media (max-width: 767px) {
+      .modal-hotel h4, .modal-content h4 {
+        margin: 20px 0px; } }
+  .modal-hotel h5, .modal-content h5 {
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 30px 0px;
+    font-family: Chelsea-solid;
+    font-style: italic; }
+
+.bridal-container {
+  background-color: #270233;
+  width: 100%;
+  font-size: 16pt;
+  padding-bottom: 50px; }
+  .bridal-container h1 {
+    margin: 0px 0px 50px 0px;
+    padding: 25px 0px;
+    color: #f7e7ce;
+    font-size: 3em;
+    font-family: Chelsea-bold;
+    text-decoration: underline; }
+  .bridal-container .bridal-member {
+    position: relative;
+    background-color: #E0C389; }
+    .bridal-container .bridal-member:hover img {
+      opacity: 0.2;
+      -webkit-transition: opacity 0.5s ease;
+      -moz-transition: opacity 0.5s ease;
+      -ms-transition: opacity 0.5s ease;
+      -o-transition: opacity 0.5s ease;
+      transition: opacity 0.5s ease; }
+    .bridal-container .bridal-member:hover .caption {
+      display: inline-block;
+      color: #270233;
+      font-family: Chelsea-bold;
+      font-weight: 600;
+      font-size: 1.25em;
+      top: 40%;
+      -webkit-transition: opacity 0.5s ease;
+      -moz-transition: opacity 0.5s ease;
+      -ms-transition: opacity 0.5s ease;
+      -o-transition: opacity 0.5s ease;
+      transition: opacity 0.5s ease; }
+    .bridal-container .bridal-member img {
+      width: 100%; }
+    .bridal-container .bridal-member .caption {
+      display: none; }
+      .bridal-container .bridal-member .caption .name {
+        font-size: 1.65em;
+        font-weight: 600; }
+      .bridal-container .bridal-member .caption .title {
+        font-size: 1.25em;
+        font-family: Chelsea; }
+
+.registry-container {
+  width: 100%;
+  background-color: #270233;
+  margin-top: -20px;
+  font-size: 16pt;
+  padding-bottom: 20px; }
+  @media (max-width: 992px) {
+    .registry-container {
+      font-size: 12pt; } }
+  @media (max-width: 767px) {
+    .registry-container {
+      font-size: 10px; } }
+  .registry-container h1 {
+    padding: 30px 0px;
+    color: #f7e7ce;
+    font-family: Chelsea-bold;
+    font-size: 2.75em;
+    text-decoration: underline; }
+    @media (max-width: 992px) {
+      .registry-container h1 {
+        padding: 15px 0px; } }
+    @media (max-width: 767px) {
+      .registry-container h1 {
+        padding: 10px 0px; } }
+  .registry-container .registry-wrapper {
+    margin: 50px 0px; }
+    @media (max-width: 992px) {
+      .registry-container .registry-wrapper {
+        margin: 25px 0px; } }
+    @media (max-width: 992px) {
+      .registry-container .registry-wrapper {
+        margin: 10px 0px; } }
+  .registry-container .registry-link {
+    padding: 60px 0px; }
+    .registry-container .registry-link img {
+      width: 60%; }
+
+.memoriam-container {
+  background-color: #270233;
+  width: 100%;
+  font-size: 16pt;
+  padding-bottom: 50px; }
+  .memoriam-container h1 {
+    margin: 0px 0px 50px 0px;
+    padding: 25px 0px;
+    color: #f7e7ce;
+    font-size: 3em;
+    font-family: Chelsea-bold;
+    text-decoration: underline; }
+  .memoriam-container .memoriam-member {
+    position: relative;
+    background-color: #E0C389; }
+    .memoriam-container .memoriam-member:hover img {
+      opacity: 0.2;
+      -webkit-transition: opacity 0.5s ease;
+      -moz-transition: opacity 0.5s ease;
+      -ms-transition: opacity 0.5s ease;
+      -o-transition: opacity 0.5s ease;
+      transition: opacity 0.5s ease; }
+    .memoriam-container .memoriam-member:hover .caption {
+      display: inline-block;
+      color: #270233;
+      font-family: Chelsea-bold;
+      font-weight: 600;
+      font-size: 1.25em;
+      top: 40%;
+      -webkit-transition: opacity 0.5s ease;
+      -moz-transition: opacity 0.5s ease;
+      -ms-transition: opacity 0.5s ease;
+      -o-transition: opacity 0.5s ease;
+      transition: opacity 0.5s ease; }
+    .memoriam-container .memoriam-member img {
+      width: 100%; }
+    .memoriam-container .memoriam-member .caption {
+      display: none; }
+      .memoriam-container .memoriam-member .caption .name {
+        font-size: 1.65em;
+        font-weight: 600; }
+      .memoriam-container .memoriam-member .caption .title {
+        font-size: 1.25em;
+        font-family: Chelsea; }
+  .memoriam-container .memoriam-content {
+    margin: 75px 15px;
+    font-family: Chelsea-bold;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: #f7e7ce;
+    text-align: left; }
 
 .contact-container {
   width: 100%;
   background-color: #270233;
   text-align: center;
   color: #f7e7ce;
-  padding: 50px 0px;
-  font-family: Chelsea-bold; }
+  padding: 15px 0px 50px 0px;
+  font-size: 16pt;
+  font-family: Chelsea; }
   @media (max-width: 992px) {
     .contact-container {
       padding: 25px 0px; } }
@@ -455,17 +713,18 @@ nav {
       color: #270233;
       text-decoration: underline; }
   .contact-container h1 {
-    font-size: 2.75em;
+    font-size: 2.5em;
     text-decoration: underline;
-    margin: 50px 0px; }
+    font-family: Chelsea-bold;
+    padding-bottom: 20px; }
     @media (max-width: 992px) {
       .contact-container h1 {
         margin: 20px 0px;
-        font-size: 2.5em; } }
+        font-size: 2em; } }
     @media (max-width: 767px) {
       .contact-container h1 {
         margin: 10px 0px;
-        font-size: 2em; } }
+        font-size: 1.75em; } }
   .contact-container h2 {
     color: #270233;
     text-align: center;
@@ -509,52 +768,5 @@ nav {
           color: #f7e7ce;
           background-color: #270233;
           font-size: 16pt; }
-
-@media (max-width: 992px) {
-  .modal-dialog {
-    width: 75%;
-    margin: 0px auto; } }
-
-.modal-hotel, .modal-content {
-  background-color: #f7e7ce;
-  text-align: center;
-  color: #270233;
-  font-family: Chelsea-bold;
-  font-weight: 600;
-  font-size: 16pt; }
-  @media (max-width: 992px) {
-    .modal-hotel, .modal-content {
-      font-size: 12pt;
-      padding: 5px; } }
-  @media (max-width: 767px) {
-    .modal-hotel, .modal-content {
-      font-size: 10pt; } }
-  .modal-hotel a, .modal-content a {
-    text-decoration: none;
-    color: #270233; }
-    @media (max-width: 992px) {
-      .modal-hotel a, .modal-content a {
-        text-decoration: underline; } }
-    .modal-hotel a:hover, .modal-hotel a:visited, .modal-content a:hover, .modal-content a:visited {
-      text-decoration: underline;
-      color: #270233; }
-  .modal-hotel div, .modal-content div {
-    border-top: 2px solid #270233;
-    padding: 25px; }
-  .modal-hotel h3, .modal-content h3 {
-    font-size: 1.75em;
-    font-weight: 600;
-    margin: 25px 0px; }
-  .modal-hotel h4, .modal-content h4 {
-    font-size: 1.25em;
-    font-weight: 600;
-    margin: 5px 0px;
-    font-family: Chelsea; }
-  .modal-hotel h5, .modal-content h5 {
-    font-size: 1em;
-    font-weight: 600;
-    margin: 15px 0px;
-    font-family: Chelsea;
-    font-style: italic; }
 
 /*# sourceMappingURL=main.css.map */
