@@ -658,11 +658,17 @@ nav
 
 
 
-.bridal-container
+.bridal-container, .memoriam-container
 	background-color: $purple
 	width: 100%
 	font-size: 16pt
 	padding-bottom: 50px
+
+	@media (max-width: 992px)
+		font-size: 12pt
+
+	@media (max-width: 767px)
+		font-size: 10pt
 
 	h1
 		margin: 0px 0px 50px 0px
@@ -672,7 +678,15 @@ nav
 		font-family: Chelsea-bold
 		text-decoration: underline
 
-	.bridal-member
+		@media (max-width: 992px)
+			margin: 0px 0px 15px 0px
+			font-size: 2.75em
+
+		@media (max-width: 767px)
+			margin: 0px 0px 10px 0px
+			font-size: 2.5em
+
+	.bridal-member, .memoriam-member
 		position: relative
 		background-color: $gold
 
@@ -685,8 +699,11 @@ nav
 				-o-transition: opacity 0.5s ease
 				transition: opacity 0.5s ease
 
+				@media (max-width: 992px)
+					opacity: 1
+
 			.caption
-				display: inline-block
+				visibility: visible
 				color: $purple
 				font-family: Chelsea-bold
 				font-weight: 600
@@ -698,24 +715,171 @@ nav
 				-o-transition: opacity 0.5s ease
 				transition: opacity 0.5s ease
 
+				@media (max-width: 992px)
+					visibility: visible
+					color: $purple
+					font-family: Chelsea-bold
+					font-weight: 600
+					font-size: 1.05em
+					top: 80%
+					-webkit-transition: opacity 0.5s ease
+					-moz-transition: opacity 0.5s ease
+					-ms-transition: opacity 0.5s ease
+					-o-transition: opacity 0.5s ease
+					transition: opacity 0.5s ease
+					background-color: rgba(224, 195, 137, .75)
+					padding-top: 8px
+
+					@media (max-width: 850px)
+						font-size: .9em
+						padding-top: 5px
+
+					@media (max-width: 767px)
+						font-size: 1.5em
+						padding-top: 15px
+
+					@media (max-width: 600px)
+						font-size: 1.15em
+						padding-top: 15px
+
+					@media (max-width: 500px)
+						font-size: 1em
+						padding-top: 8px
+
+			.memoriam-member
+				.caption
+					@media (max-width: 992px)
+						padding: 3px
+
+					@media (max-width: 767px)
+						padding: 10px
+
+					.name
+						@media (max-width: 992px)
+							font-size: 1em
+
+						@media (max-width: 767px)
+							font-size: 1.2em
+
+					.title
+						@media (max-width: 992px)
+							font-size: .85em
+
+							@media (max-width: 767px)
+								font-size: .9em
+
+
 		img
 			width: 100%
 
 		.caption
-			display: none
+			visibility: hidden
+
+			@media (max-width: 992px)
+				visibility: visible
+				color: $purple
+				font-family: Chelsea-bold
+				font-weight: 600
+				font-size: 1.05em
+				top: 80%
+				-webkit-transition: opacity 0.5s ease
+				-moz-transition: opacity 0.5s ease
+				-ms-transition: opacity 0.5s ease
+				-o-transition: opacity 0.5s ease
+				transition: opacity 0.5s ease
+				background-color: rgba(224, 195, 137, .75)
+				padding-top: 8px
+
+			@media (max-width: 850px)
+				font-size: .9em
+				padding-top: 5px
+
+			@media (max-width: 767px)
+				font-size: 1.5em
+				padding-top: 15px
+
+			@media (max-width: 600px)
+				font-size: 1.15em
+				padding-top: 15px
+
+			@media (max-width: 500px)
+				font-size: 1em
+				padding-top: 8px
 
 			.name
 				font-size: 1.65em
 				font-weight: 600
 
+				@media (max-width: 992px)
+					font-size: 1.05em
+					margin: 0px
+
+				@media (max-width: 767px)
+					font-size: 1.75em
+					margin: 0px
+
 			.title
 				font-size: 1.25em
 				font-family: Chelsea
 
+				@media (max-width: 992px)
+					font-size: .9em
+					margin: 0px
+
+				@media (max-width: 767px)
+					font-size: 1.75em
+					margin: 0px
+
+.memoriam-container
+	background-color: $purple
+	width: 100%
+	font-size: 16pt
+	padding-bottom: 50px
+
+	@media (max-width: 992px)
+		font-size: 12pt
+
+	@media (max-width: 767px)
+		font-size: 10pt
 
 
+	h1
+		margin: 0px 0px 50px 0px
+		padding: 25px 0px
+		color: $champagne
+		font-size: 3em
+		font-family: Chelsea-bold
+		text-decoration: underline
 
+		@media (max-width: 992px)
+			font-size: 2.75em
+			margin: 0px 0px 15px 0px
 
+		@media (max-width: 767px)
+			font-size: 2.5em
+			margin: 0px 0px 10px 0px
+
+	.memoriam-member
+		.caption
+			@media (max-width: 992px)
+				padding: 3px
+
+			@media (max-width: 767px)
+				padding: 10px
+
+			.name
+				@media (max-width: 992px)
+					font-size: 1em
+
+				@media (max-width: 767px)
+					font-size: 1.2em
+
+			.title
+				@media (max-width: 992px)
+					font-size: .85em
+
+				@media (max-width: 767px)
+					font-size: .9em
 
 //==================REGISTRY===================//
 
@@ -729,16 +893,16 @@ nav
 	padding-bottom: 20px
 
 	@media (max-width: 992px)
-		font-size: 12pt
+		font-size: 14pt
 
 	@media (max-width: 767px)
-		font-size: 10px
+		font-size: 12px
 
 	h1
 		padding: 30px 0px
 		color: $champagne
 		font-family: Chelsea-bold
-		font-size: 2.75em
+		font-size: 3em
 		text-decoration: underline
 
 		@media (max-width: 992px)
@@ -762,72 +926,8 @@ nav
 		img
 			width: 60%
 
-
-
-//==================MEMORIAM===================//
-
-
-.memoriam-container
-	background-color: $purple
-	width: 100%
-	font-size: 16pt
-	padding-bottom: 50px
-
-	h1
-		margin: 0px 0px 50px 0px
-		padding: 25px 0px
-		color: $champagne
-		font-size: 3em
-		font-family: Chelsea-bold
-		text-decoration: underline
-
-	.memoriam-member
-		position: relative
-		background-color: $gold
-
-		&:hover
-			img
-				opacity: .2
-				-webkit-transition: opacity 0.5s ease
-				-moz-transition: opacity 0.5s ease
-				-ms-transition: opacity 0.5s ease
-				-o-transition: opacity 0.5s ease
-				transition: opacity 0.5s ease
-
-			.caption
-				display: inline-block
-				color: $purple
-				font-family: Chelsea-bold
-				font-weight: 600
-				font-size: 1.25em
-				top: 40%
-				-webkit-transition: opacity 0.5s ease
-				-moz-transition: opacity 0.5s ease
-				-ms-transition: opacity 0.5s ease
-				-o-transition: opacity 0.5s ease
-				transition: opacity 0.5s ease
-
-		img
-			width: 100%
-
-		.caption
-			display: none
-
-			.name
-				font-size: 1.65em
-				font-weight: 600
-
-			.title
-				font-size: 1.25em
-				font-family: Chelsea
-
-	.memoriam-content
-		margin: 75px 15px
-		font-family: Chelsea-bold
-		font-weight: 600
-		font-size: .9em
-		color: $champagne
-		text-align: left
+		.amazon
+			padding-top: 10px
 
 
 

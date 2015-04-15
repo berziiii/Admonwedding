@@ -558,30 +558,47 @@ nav {
     font-family: Chelsea-solid;
     font-style: italic; }
 
-.bridal-container {
+.bridal-container, .memoriam-container {
   background-color: #270233;
   width: 100%;
   font-size: 16pt;
   padding-bottom: 50px; }
-  .bridal-container h1 {
+  @media (max-width: 992px) {
+    .bridal-container, .memoriam-container {
+      font-size: 12pt; } }
+  @media (max-width: 767px) {
+    .bridal-container, .memoriam-container {
+      font-size: 10pt; } }
+  .bridal-container h1, .memoriam-container h1 {
     margin: 0px 0px 50px 0px;
     padding: 25px 0px;
     color: #f7e7ce;
     font-size: 3em;
     font-family: Chelsea-bold;
     text-decoration: underline; }
-  .bridal-container .bridal-member {
+    @media (max-width: 992px) {
+      .bridal-container h1, .memoriam-container h1 {
+        margin: 0px 0px 15px 0px;
+        font-size: 2.75em; } }
+    @media (max-width: 767px) {
+      .bridal-container h1, .memoriam-container h1 {
+        margin: 0px 0px 10px 0px;
+        font-size: 2.5em; } }
+  .bridal-container .bridal-member, .bridal-container .memoriam-member, .memoriam-container .bridal-member, .memoriam-container .memoriam-member {
     position: relative;
     background-color: #E0C389; }
-    .bridal-container .bridal-member:hover img {
+    .bridal-container .bridal-member:hover img, .bridal-container .memoriam-member:hover img, .memoriam-container .bridal-member:hover img, .memoriam-container .memoriam-member:hover img {
       opacity: 0.2;
       -webkit-transition: opacity 0.5s ease;
       -moz-transition: opacity 0.5s ease;
       -ms-transition: opacity 0.5s ease;
       -o-transition: opacity 0.5s ease;
       transition: opacity 0.5s ease; }
-    .bridal-container .bridal-member:hover .caption {
-      display: inline-block;
+      @media (max-width: 992px) {
+        .bridal-container .bridal-member:hover img, .bridal-container .memoriam-member:hover img, .memoriam-container .bridal-member:hover img, .memoriam-container .memoriam-member:hover img {
+          opacity: 1; } }
+    .bridal-container .bridal-member:hover .caption, .bridal-container .memoriam-member:hover .caption, .memoriam-container .bridal-member:hover .caption, .memoriam-container .memoriam-member:hover .caption {
+      visibility: visible;
       color: #270233;
       font-family: Chelsea-bold;
       font-weight: 600;
@@ -592,16 +609,159 @@ nav {
       -ms-transition: opacity 0.5s ease;
       -o-transition: opacity 0.5s ease;
       transition: opacity 0.5s ease; }
-    .bridal-container .bridal-member img {
+      @media (max-width: 992px) {
+        .bridal-container .bridal-member:hover .caption, .bridal-container .memoriam-member:hover .caption, .memoriam-container .bridal-member:hover .caption, .memoriam-container .memoriam-member:hover .caption {
+          visibility: visible;
+          color: #270233;
+          font-family: Chelsea-bold;
+          font-weight: 600;
+          font-size: 1.05em;
+          top: 80%;
+          -webkit-transition: opacity 0.5s ease;
+          -moz-transition: opacity 0.5s ease;
+          -ms-transition: opacity 0.5s ease;
+          -o-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+          background-color: rgba(224, 195, 137, 0.75);
+          padding-top: 8px; } }
+  @media (max-width: 992px) and (max-width: 850px) {
+    .bridal-container .bridal-member:hover .caption, .bridal-container .memoriam-member:hover .caption, .memoriam-container .bridal-member:hover .caption, .memoriam-container .memoriam-member:hover .caption {
+      font-size: 0.9em;
+      padding-top: 5px; } }
+  @media (max-width: 992px) and (max-width: 767px) {
+    .bridal-container .bridal-member:hover .caption, .bridal-container .memoriam-member:hover .caption, .memoriam-container .bridal-member:hover .caption, .memoriam-container .memoriam-member:hover .caption {
+      font-size: 1.5em;
+      padding-top: 15px; } }
+  @media (max-width: 992px) and (max-width: 600px) {
+    .bridal-container .bridal-member:hover .caption, .bridal-container .memoriam-member:hover .caption, .memoriam-container .bridal-member:hover .caption, .memoriam-container .memoriam-member:hover .caption {
+      font-size: 1.15em;
+      padding-top: 15px; } }
+  @media (max-width: 992px) and (max-width: 500px) {
+    .bridal-container .bridal-member:hover .caption, .bridal-container .memoriam-member:hover .caption, .memoriam-container .bridal-member:hover .caption, .memoriam-container .memoriam-member:hover .caption {
+      font-size: 1em;
+      padding-top: 8px; } }
+
+    @media (max-width: 992px) {
+      .bridal-container .bridal-member:hover .memoriam-member .caption, .bridal-container .memoriam-member:hover .memoriam-member .caption, .memoriam-container .bridal-member:hover .memoriam-member .caption, .memoriam-container .memoriam-member:hover .memoriam-member .caption {
+        padding: 3px; } }
+    @media (max-width: 767px) {
+      .bridal-container .bridal-member:hover .memoriam-member .caption, .bridal-container .memoriam-member:hover .memoriam-member .caption, .memoriam-container .bridal-member:hover .memoriam-member .caption, .memoriam-container .memoriam-member:hover .memoriam-member .caption {
+        padding: 10px; } }
+    @media (max-width: 992px) {
+      .bridal-container .bridal-member:hover .memoriam-member .caption .name, .bridal-container .memoriam-member:hover .memoriam-member .caption .name, .memoriam-container .bridal-member:hover .memoriam-member .caption .name, .memoriam-container .memoriam-member:hover .memoriam-member .caption .name {
+        font-size: 1em; } }
+    @media (max-width: 767px) {
+      .bridal-container .bridal-member:hover .memoriam-member .caption .name, .bridal-container .memoriam-member:hover .memoriam-member .caption .name, .memoriam-container .bridal-member:hover .memoriam-member .caption .name, .memoriam-container .memoriam-member:hover .memoriam-member .caption .name {
+        font-size: 1.2em; } }
+    @media (max-width: 992px) {
+      .bridal-container .bridal-member:hover .memoriam-member .caption .title, .bridal-container .memoriam-member:hover .memoriam-member .caption .title, .memoriam-container .bridal-member:hover .memoriam-member .caption .title, .memoriam-container .memoriam-member:hover .memoriam-member .caption .title {
+        font-size: 0.85em; } }
+  @media (max-width: 992px) and (max-width: 767px) {
+    .bridal-container .bridal-member:hover .memoriam-member .caption .title, .bridal-container .memoriam-member:hover .memoriam-member .caption .title, .memoriam-container .bridal-member:hover .memoriam-member .caption .title, .memoriam-container .memoriam-member:hover .memoriam-member .caption .title {
+      font-size: 0.9em; } }
+
+    .bridal-container .bridal-member img, .bridal-container .memoriam-member img, .memoriam-container .bridal-member img, .memoriam-container .memoriam-member img {
       width: 100%; }
-    .bridal-container .bridal-member .caption {
-      display: none; }
-      .bridal-container .bridal-member .caption .name {
+    .bridal-container .bridal-member .caption, .bridal-container .memoriam-member .caption, .memoriam-container .bridal-member .caption, .memoriam-container .memoriam-member .caption {
+      visibility: hidden; }
+      @media (max-width: 992px) {
+        .bridal-container .bridal-member .caption, .bridal-container .memoriam-member .caption, .memoriam-container .bridal-member .caption, .memoriam-container .memoriam-member .caption {
+          visibility: visible;
+          color: #270233;
+          font-family: Chelsea-bold;
+          font-weight: 600;
+          font-size: 1.05em;
+          top: 80%;
+          -webkit-transition: opacity 0.5s ease;
+          -moz-transition: opacity 0.5s ease;
+          -ms-transition: opacity 0.5s ease;
+          -o-transition: opacity 0.5s ease;
+          transition: opacity 0.5s ease;
+          background-color: rgba(224, 195, 137, 0.75);
+          padding-top: 8px; } }
+      @media (max-width: 850px) {
+        .bridal-container .bridal-member .caption, .bridal-container .memoriam-member .caption, .memoriam-container .bridal-member .caption, .memoriam-container .memoriam-member .caption {
+          font-size: 0.9em;
+          padding-top: 5px; } }
+      @media (max-width: 767px) {
+        .bridal-container .bridal-member .caption, .bridal-container .memoriam-member .caption, .memoriam-container .bridal-member .caption, .memoriam-container .memoriam-member .caption {
+          font-size: 1.5em;
+          padding-top: 15px; } }
+      @media (max-width: 600px) {
+        .bridal-container .bridal-member .caption, .bridal-container .memoriam-member .caption, .memoriam-container .bridal-member .caption, .memoriam-container .memoriam-member .caption {
+          font-size: 1.15em;
+          padding-top: 15px; } }
+      @media (max-width: 500px) {
+        .bridal-container .bridal-member .caption, .bridal-container .memoriam-member .caption, .memoriam-container .bridal-member .caption, .memoriam-container .memoriam-member .caption {
+          font-size: 1em;
+          padding-top: 8px; } }
+      .bridal-container .bridal-member .caption .name, .bridal-container .memoriam-member .caption .name, .memoriam-container .bridal-member .caption .name, .memoriam-container .memoriam-member .caption .name {
         font-size: 1.65em;
         font-weight: 600; }
-      .bridal-container .bridal-member .caption .title {
+        @media (max-width: 992px) {
+          .bridal-container .bridal-member .caption .name, .bridal-container .memoriam-member .caption .name, .memoriam-container .bridal-member .caption .name, .memoriam-container .memoriam-member .caption .name {
+            font-size: 1.05em;
+            margin: 0px; } }
+        @media (max-width: 767px) {
+          .bridal-container .bridal-member .caption .name, .bridal-container .memoriam-member .caption .name, .memoriam-container .bridal-member .caption .name, .memoriam-container .memoriam-member .caption .name {
+            font-size: 1.75em;
+            margin: 0px; } }
+      .bridal-container .bridal-member .caption .title, .bridal-container .memoriam-member .caption .title, .memoriam-container .bridal-member .caption .title, .memoriam-container .memoriam-member .caption .title {
         font-size: 1.25em;
         font-family: Chelsea; }
+        @media (max-width: 992px) {
+          .bridal-container .bridal-member .caption .title, .bridal-container .memoriam-member .caption .title, .memoriam-container .bridal-member .caption .title, .memoriam-container .memoriam-member .caption .title {
+            font-size: 0.9em;
+            margin: 0px; } }
+        @media (max-width: 767px) {
+          .bridal-container .bridal-member .caption .title, .bridal-container .memoriam-member .caption .title, .memoriam-container .bridal-member .caption .title, .memoriam-container .memoriam-member .caption .title {
+            font-size: 1.75em;
+            margin: 0px; } }
+
+.memoriam-container {
+  background-color: #270233;
+  width: 100%;
+  font-size: 16pt;
+  padding-bottom: 50px; }
+  @media (max-width: 992px) {
+    .memoriam-container {
+      font-size: 12pt; } }
+  @media (max-width: 767px) {
+    .memoriam-container {
+      font-size: 10pt; } }
+  .memoriam-container h1 {
+    margin: 0px 0px 50px 0px;
+    padding: 25px 0px;
+    color: #f7e7ce;
+    font-size: 3em;
+    font-family: Chelsea-bold;
+    text-decoration: underline; }
+    @media (max-width: 992px) {
+      .memoriam-container h1 {
+        font-size: 2.75em;
+        margin: 0px 0px 15px 0px; } }
+    @media (max-width: 767px) {
+      .memoriam-container h1 {
+        font-size: 2.5em;
+        margin: 0px 0px 10px 0px; } }
+  @media (max-width: 992px) {
+    .memoriam-container .memoriam-member .caption {
+      padding: 3px; } }
+  @media (max-width: 767px) {
+    .memoriam-container .memoriam-member .caption {
+      padding: 10px; } }
+  @media (max-width: 992px) {
+    .memoriam-container .memoriam-member .caption .name {
+      font-size: 1em; } }
+  @media (max-width: 767px) {
+    .memoriam-container .memoriam-member .caption .name {
+      font-size: 1.2em; } }
+  @media (max-width: 992px) {
+    .memoriam-container .memoriam-member .caption .title {
+      font-size: 0.85em; } }
+  @media (max-width: 767px) {
+    .memoriam-container .memoriam-member .caption .title {
+      font-size: 0.9em; } }
 
 .registry-container {
   width: 100%;
@@ -611,15 +771,15 @@ nav {
   padding-bottom: 20px; }
   @media (max-width: 992px) {
     .registry-container {
-      font-size: 12pt; } }
+      font-size: 14pt; } }
   @media (max-width: 767px) {
     .registry-container {
-      font-size: 10px; } }
+      font-size: 12px; } }
   .registry-container h1 {
     padding: 30px 0px;
     color: #f7e7ce;
     font-family: Chelsea-bold;
-    font-size: 2.75em;
+    font-size: 3em;
     text-decoration: underline; }
     @media (max-width: 992px) {
       .registry-container h1 {
@@ -639,58 +799,8 @@ nav {
     padding: 60px 0px; }
     .registry-container .registry-link img {
       width: 60%; }
-
-.memoriam-container {
-  background-color: #270233;
-  width: 100%;
-  font-size: 16pt;
-  padding-bottom: 50px; }
-  .memoriam-container h1 {
-    margin: 0px 0px 50px 0px;
-    padding: 25px 0px;
-    color: #f7e7ce;
-    font-size: 3em;
-    font-family: Chelsea-bold;
-    text-decoration: underline; }
-  .memoriam-container .memoriam-member {
-    position: relative;
-    background-color: #E0C389; }
-    .memoriam-container .memoriam-member:hover img {
-      opacity: 0.2;
-      -webkit-transition: opacity 0.5s ease;
-      -moz-transition: opacity 0.5s ease;
-      -ms-transition: opacity 0.5s ease;
-      -o-transition: opacity 0.5s ease;
-      transition: opacity 0.5s ease; }
-    .memoriam-container .memoriam-member:hover .caption {
-      display: inline-block;
-      color: #270233;
-      font-family: Chelsea-bold;
-      font-weight: 600;
-      font-size: 1.25em;
-      top: 40%;
-      -webkit-transition: opacity 0.5s ease;
-      -moz-transition: opacity 0.5s ease;
-      -ms-transition: opacity 0.5s ease;
-      -o-transition: opacity 0.5s ease;
-      transition: opacity 0.5s ease; }
-    .memoriam-container .memoriam-member img {
-      width: 100%; }
-    .memoriam-container .memoriam-member .caption {
-      display: none; }
-      .memoriam-container .memoriam-member .caption .name {
-        font-size: 1.65em;
-        font-weight: 600; }
-      .memoriam-container .memoriam-member .caption .title {
-        font-size: 1.25em;
-        font-family: Chelsea; }
-  .memoriam-container .memoriam-content {
-    margin: 75px 15px;
-    font-family: Chelsea-bold;
-    font-weight: 600;
-    font-size: 0.9em;
-    color: #f7e7ce;
-    text-align: left; }
+    .registry-container .registry-link .amazon {
+      padding-top: 10px; }
 
 .contact-container {
   width: 100%;
