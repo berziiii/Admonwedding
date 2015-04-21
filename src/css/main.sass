@@ -72,6 +72,9 @@ $gold: #E0C389
 .glyphicons-heart:before 
 	content: "\e013"
 
+.glyphicons-bed:before
+	content: "\e496"
+
 .glyphicons-chevron-left:before 
 	content: "\e225"
 
@@ -90,7 +93,13 @@ $gold: #E0C389
 	right: 0
 
 
+
+
+
 //===============Module Classes==================//
+
+
+
 
 body
 	background-color: $purple
@@ -190,7 +199,13 @@ nav
 					@media (max-width: 767px)
 						font-size: 3em
 
+
+
+
 //===================HOME======================//
+
+
+
 
 
 .main-container 
@@ -338,6 +353,12 @@ nav
 		padding: 10px 0px
 		text-decoration: underline
 
+		@media (max-width: 992px)
+			font-size: 2.75em
+
+		@media (max-width: 767px)
+			font-size: 2.5em
+
 	.slide-wrapper
 		width: 80%
 		margin: 0px auto
@@ -371,7 +392,7 @@ nav
 					font-size: 1em
 
 					a
-						text-decoration: none
+						text-decoration: underline
 						color: $champagne
 						cursor: pointer
 						-webkit-transition: all 0.3s ease
@@ -406,11 +427,11 @@ nav
 
 				p
 					font-family: Chelsea
-					font-size: .85em
+					font-size: .95em
 					font-weight: 600
 
 					a
-						text-decoration: none
+						text-decoration: underline
 						color: $gold
 						cursor: pointer
 						-webkit-transition: all 0.3s ease
@@ -460,7 +481,9 @@ nav
 
 
 
+
 //================TRAVEL===================//
+
 
 
 
@@ -485,14 +508,17 @@ nav
 		text-align: center
 
 		h1
-			font-size: 2.75em
+			font-size: 3em
 			margin: 50px 0px
 			text-decoration: underline
 
 			@media (max-width: 992px)
 				padding: 25px 0px
 				margin: 10px 0px
-				font-size: 1.75em
+				font-size: 2.75em
+
+			@media (max-width: 767px)
+				font-size: 2.5em
 
 		h2
 			font-size: 1.5em
@@ -502,7 +528,7 @@ nav
 				font-size: 1.25em
 
 			@media (max-width: 767px)
-				font-size: 1em
+				font-size: 1.25em
 
 		h3
 			font-weight: 600
@@ -514,7 +540,7 @@ nav
 				margin-bottom: 25px
 
 			@media (max-width: 767px)
-				font-size: 1em
+				font-size: 1.25em
 				margin-bottom: 15px
 
 		span
@@ -537,7 +563,10 @@ nav
 			margin-top: 10px
 
 			@media (max-width: 992px)
-				padding: 15px 0px
+				padding: 15px 
+
+			@media (max-width: 767px)
+				font-size: 1.15em
 
 		.airport-wrapper, .hotel-wrapper
 			h2
@@ -658,6 +687,8 @@ nav
 
 
 
+
+
 .bridal-container, .memoriam-container
 	background-color: $purple
 	width: 100%
@@ -669,6 +700,11 @@ nav
 
 	@media (max-width: 767px)
 		font-size: 10pt
+		width: 90%
+		margin-left: 5%
+
+	@media (max-width: 400px)
+		font-size: 8pt
 
 	h1
 		margin: 0px 0px 50px 0px
@@ -686,9 +722,11 @@ nav
 			margin: 0px 0px 10px 0px
 			font-size: 2.5em
 
-	.bridal-member, .memoriam-member
+	.bridal-member, .memoriam-member, .groomsmen-member
 		position: relative
 		background-color: $gold
+		border: 2px solid $gold
+		margin-bottom: 30px
 
 		&:hover
 			img
@@ -708,7 +746,7 @@ nav
 				font-family: Chelsea-bold
 				font-weight: 600
 				font-size: 1.25em
-				top: 40%
+				top: 35%
 				-webkit-transition: opacity 0.5s ease
 				-moz-transition: opacity 0.5s ease
 				-ms-transition: opacity 0.5s ease
@@ -761,6 +799,9 @@ nav
 						@media (max-width: 767px)
 							font-size: 1.2em
 
+						@media (max-width: 500px)
+							font-size: 1.15em
+
 					.title
 						@media (max-width: 992px)
 							font-size: .85em
@@ -768,6 +809,8 @@ nav
 							@media (max-width: 767px)
 								font-size: .9em
 
+							@media (max-width: 500px)
+								font-size: .85em
 
 		img
 			width: 100%
@@ -809,6 +852,7 @@ nav
 			.name
 				font-size: 1.65em
 				font-weight: 600
+				margin: 0px
 
 				@media (max-width: 992px)
 					font-size: 1.05em
@@ -818,17 +862,97 @@ nav
 					font-size: 1.75em
 					margin: 0px
 
+				@media (max-width: 500px)
+					font-size: 1.3em
+
 			.title
-				font-size: 1.25em
+				font-size: .95em
+				margin: 0px
 				font-family: Chelsea
 
 				@media (max-width: 992px)
-					font-size: .9em
+					font-size: .8em
 					margin: 0px
 
 				@media (max-width: 767px)
-					font-size: 1.75em
+					font-size: 1.15em
 					margin: 0px
+
+				@media (max-width: 500px)
+					font-size: 1em
+
+	.groomsmen-member
+		&:hover
+			img
+				opacity: 0
+
+			.caption
+				top: 30%
+
+				@media (max-width: 992px)
+					top: 30%
+
+				.name
+					display: none
+
+					@media (max-width: 992px)
+						display: block
+
+				.title
+					display: block
+					font-family: Chelsea
+
+					@media (max-width: 992px)
+						display: block
+
+
+		.groomsmen
+			opacity: 0
+			background-color: $champagne
+
+		.caption
+			visibility: visible
+			color: $purple
+			font-family: Chelsea-bold
+			font-weight: 600
+			top: 30%
+
+			@media (max-width: 992px)
+				top: 30%
+
+
+			.name
+				font-size: 3em
+				padding-top: 20px
+
+				@media (max-width: 992px)
+					font-size: 2em
+					display: block
+					line-height: 75px
+					margin-top: -40px
+					text-decoration: underline
+
+				@media (max-width: 767px)
+					font-size: 2.5em
+					margin-top: -75px
+
+			.title
+				display: none
+				font-size: 1.75em
+				margin-top: -20px
+
+				@media (max-width: 992px)
+					display: block
+					font-size: 1.5em
+					line-height: 45px
+
+				@media (max-width: 767px)
+					font-size: 1.75em
+					line-height: 60px
+
+
+
+
 
 .memoriam-container
 	background-color: $purple
@@ -841,6 +965,8 @@ nav
 
 	@media (max-width: 767px)
 		font-size: 10pt
+		width: 90%
+		margin-left: 5%
 
 
 	h1
@@ -867,12 +993,18 @@ nav
 			@media (max-width: 767px)
 				padding: 10px
 
+			@media (max-width: 500px)
+				padding: 3px
+
 			.name
 				@media (max-width: 992px)
 					font-size: 1em
 
 				@media (max-width: 767px)
 					font-size: 1.2em
+
+				@media (max-width: 500px)
+					font-size: 1em
 
 			.title
 				@media (max-width: 992px)
@@ -881,7 +1013,14 @@ nav
 				@media (max-width: 767px)
 					font-size: .9em
 
+				@media (max-width: 500px)
+					font-size: .8em
+
+
+
+
 //==================REGISTRY===================//
+
 
 
 
@@ -950,6 +1089,8 @@ nav
 
 	@media (max-width: 767px)
 		padding: 15px 0px
+		width: 90%
+		margin-left: 5%
 
 	a
 		color: $purple
@@ -987,6 +1128,10 @@ nav
 		text-decoration: underline
 		font-weight: 600
 		margin: 25px 0px
+
+	img
+		width: 80%
+		margin: 0px auto
 
 	#container
 		background-color: $champagne
