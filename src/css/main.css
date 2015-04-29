@@ -337,7 +337,7 @@ nav {
           font-size: 0.85em;
           font-family: Chelsea-solid;
           color: #E0C389; }
-        .events-container .slide-wrapper .event-wrapper .event-info iframe, .events-container .slide-wrapper .event-wrapper .event-date iframe {
+        .events-container .slide-wrapper .event-wrapper .event-info iframe, .events-container .slide-wrapper .event-wrapper .event-info embed, .events-container .slide-wrapper .event-wrapper .event-date iframe, .events-container .slide-wrapper .event-wrapper .event-date embed {
           width: 95%;
           height: 225px;
           margin: 0px auto;
