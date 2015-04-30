@@ -1,0 +1,1175 @@
+/* helper classes 
+@font-face
+	font-family: 'Chelsea'
+	src: url('../fonts/Chelsea/Chelsea.woff') format('woff')
+
+@font-face
+	font-family: 'Chelsea-bold'
+	src: url('../fonts/Chelsea/Chelsea-II.woff') format('woff')
+
+@font-face
+	font-family: 'Chelsea-solid'
+	src: url('../fonts/Chelsea/Chelsea-III.woff') format('woff')
+
+@font-face
+	font-family: 'Glyphicons-Regular'
+	src: url('../fonts/GLYPHICONS-Regular.woff') format('woff')
+
+html, body, ul, ol
+	margin: 0
+	padding: 0
+
+.clearfix:before, .clearfix:after
+	content: " "
+	display: table
+
+.clearfix:after
+	clear: both
+
+*, *:after, *:before
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	-ms-box-sizing: border-box
+	-o-sizing: border-box
+	box-sizing: border-box
+
+
+$purple: #270233
+
+$white: #eee
+
+$champagne: #f7e7ce
+
+$gold: #E0C389
+
+.glyphicons 
+	position: relative
+	top: 1px
+	display: inline-block
+	font-family: 'Glyphicons-Regular'
+	font-style: normal
+	font-weight: normal
+	line-height: 1
+	vertical-align: top
+	speak: none
+	-webkit-font-smoothing: antialiased
+
+.glyphicons-menu-hamburger:before 
+	content: "\e517"
+
+.glyphicons-marriage:before 
+	content: "\e480"
+
+.glyphicons-heart-empty:before 
+	content: "\e020"
+
+.glyphicons-airplane:before 
+	content: "\2708"
+
+.glyphicons-gift:before 
+	content: "\e070"
+
+.glyphicons-heart:before 
+	content: "\e013"
+
+.glyphicons-bed:before
+	content: "\e496"
+
+.glyphicons-chevron-left:before 
+	content: "\e225"
+
+.glyphicons-chevron-right:before 
+	content: "\e224"
+
+.hide
+	display: none
+
+.center 
+	margin: auto
+	position: absolute
+	top: 0 
+	left: 0 
+	bottom: 0 
+	right: 0
+
+
+
+
+
+//===============Module Classes==================//
+
+
+
+
+body
+	background-color: $purple
+
+nav 
+	width: 100%
+	top: 0px
+	border-bottom: 3px solid $purple
+	font-size: 16pt
+
+	@media (max-width: 992px) and (min-width: 767px)
+		font-size: 10pt
+
+	@media (max-width: 767px)
+		font-size: 8pt
+
+	@media (max-width: 400px)
+		font-size: 6pt
+
+	.nav-bar
+		border-bottom: 3px solid $purple
+		background-color: $champagne
+
+	.home-title
+		text-align: center
+
+	h1
+		text-align: center
+		color: $purple
+		font-family: Chelsea-bold
+		font-size: 2.5em
+		margin: 5px 0px
+
+		@media (max-width: 992px)
+			text-align: left
+
+		span
+			font-size: 1.15em
+			font-weight: 600
+
+	a
+		text-decoration: none
+		cursor: pointer
+		color: $purple
+		&:hover
+			color: $purple
+			cursor: pointer
+			text-decoration: none
+
+		&:visted
+			color: $purple
+			text-decoration: none
+		&:link
+			color: $purple
+			text-decoration: none
+
+		.glyphicons-menu-hamburger
+			font-size: 2em
+			position: absolute
+			right: 10%
+			top: 15px
+			&:hover
+				color: $purple
+				cursor: pointer
+				text-decoration: none
+
+			@media (max-width: 992px)
+				top: 10px
+
+	.nav-menu 
+		text-align: center
+		width: 100%
+		background-color: $purple
+
+		ul
+			list-style: none
+			color: $purple
+			width: 100%
+			background-color: $champagne
+
+			a
+				text-decoration: none
+
+				&:hover, &:visited
+					text-decoration: none
+					color: $purple
+
+				li
+					border: 1px solid $purple
+					font-size: 1.5em
+					font-weight: 600
+					width: 100%
+
+					@media (max-width: 992px)
+						font-size: 2.5em
+
+					@media (max-width: 767px)
+						font-size: 3em
+
+
+
+
+//===================HOME======================//
+
+
+
+
+
+.main-container 
+	width: 100%
+	background-color: $champagne
+	font-size: 16pt
+
+	@media (max-width: 992px)
+		font-size: 14pt
+
+	@media (max-width: 767px)
+		font-size: 12pt
+
+.hero-container 
+	width: 100%
+	background-color: $purple
+	text-align: center
+	margin: 0px auto
+
+	.hero-image-wrapper
+		width: 90%
+		margin: 0px auto
+		padding: 50px 25px
+
+		@media (max-width: 992px)
+			width: 100%
+			padding: 50px 0px
+
+		@media (max-width: 767px)
+			padding: 25px 0px
+
+
+		.hero-image
+			width: 100%
+			background-color: $champagne
+			padding: 10px
+
+			@media (max-width: 992px)
+				padding: 0px
+
+	.hero-content
+		font-family: Chelsea
+		text-align: center
+		color: $champagne
+		padding-bottom: 50px
+		border-bottom: 2px solid $champagne
+
+		@media (max-width: 992px)
+			padding-bottom: 10px
+
+		h1
+			font-size: 2em
+			font-weight: 600
+
+			@media (max-width: 500px)
+				font-size: 1.5em
+		span
+			font-size: 2em
+			font-weight: 600
+
+			@media (max-width: 500px)
+				font-size: 1.5em
+
+		h2
+			font-size: 1.75em
+			font-weight: 600
+
+			@media (max-width: 500px)
+				font-size: 1.25em
+
+	.home-links
+		color: $champagne
+		padding: 3em 0em 5em 0em
+
+		a
+			text-align: center
+			color: $champagne
+			font-size: 1.5em
+			text-decoration: none
+			cursor: pointer
+
+			&:hover
+				.glyphicons, h4
+					color: $gold
+
+			.glyphicons
+				font-size: 1.75em
+				padding-bottom: 20px
+				-webkit-transition: color 0.3s ease
+				-moz-transition: color 0.3s ease
+				-ms-transition: color 0.3s ease
+				-o-transition: color 0.3s ease
+				transition: color 0.3s ease
+		h4
+			font-weight: 600
+			font-family: Chelsea-bold
+			-webkit-transition: color 0.3s ease
+			-moz-transition: color 0.3s ease
+			-ms-transition: color 0.3s ease
+			-o-transition: color 0.3s ease
+			transition: color 0.3s ease
+
+
+.footer-container
+	width: 100%
+	background-color: $champagne
+	font-family: Chelsea-bold
+	color: $purple
+	text-align: center
+	padding: 5px 0px
+	border-top: 3px solid $purple
+
+	h4
+		@media (max-width: 767px)
+			font-size: 10pt
+
+
+
+
+//================EVENTS===================//
+
+
+
+
+.events-container
+	width: 100%
+	background-color: $purple
+	background: url(../images/save-the-date.png) no-repeat center center
+	-webkit-background-size: cover
+	-moz-background-size: cover
+	-o-background-size: cover
+	background-size: cover
+	font-size: 16pt
+	padding-bottom: 50px
+
+	@media (max-width: 992px)
+		font-size: 14pt
+
+	@media (max-width: 767px)
+		font-size: 12.5pt
+
+	h1
+		font-size: 2.75em
+		font-family: Chelsea-bold
+		padding: 10px 0px
+		text-decoration: underline
+
+		@media (max-width: 992px)
+			font-size: 2.75em
+
+		@media (max-width: 767px)
+			font-size: 2.5em
+
+	.slide-wrapper
+		width: 80%
+		margin: 0px auto
+
+		@media (max-width: 767px)
+			width: 100%
+
+		img
+			width: 100%
+			border: 3px solid $gold
+
+		.event-wrapper
+			background-color: rgba(39, 2, 51, .8)
+
+			.event-info
+				border-left: 2px solid $gold
+
+				@media (max-width: 767px)
+					border-left: 0px solid $gold
+
+			.event-info, .event-date
+				font-family: Chelsea-solid
+				color: $champagne
+				z-index: 2000
+				opacity: 1
+				text-align: left
+				margin: 10px 0px
+				padding-left: 30px
+
+				h5
+					font-size: 1em
+
+					a
+						text-decoration: underline
+						color: $champagne
+						cursor: pointer
+						-webkit-transition: all 0.3s ease
+						-moz-transition: all 0.3s ease
+						-ms-transition: all 0.3s ease
+						-o-transition: all 0.3s ease
+						transition: all 0.3s ease
+
+						&:hover, &:visited
+							text-decoration: underline
+							color: $champagne
+
+				span
+					font-weight: 600
+					font-size: .85em
+					font-family: Chelsea-solid
+					color: $gold
+
+				iframe, embed
+					width: 95%
+					height: 225px
+					margin: 0px auto
+					border: 2 solid $gold
+					border-radius: 5px
+
+				h2
+					font-weight: 600
+					font-size: 1.75em
+					font-family: Chelsea-solid
+					color: $gold
+					text-decoration: underline
+
+				p
+					font-family: Chelsea
+					font-size: .95em
+					font-weight: 600
+
+					a
+						text-decoration: underline
+						color: $gold
+						cursor: pointer
+						-webkit-transition: all 0.3s ease
+						-moz-transition: all 0.3s ease
+						-ms-transition: all 0.3s ease
+						-o-transition: all 0.3s ease
+						transition: all 0.3s ease
+
+						&:hover, &:visited
+							text-decoration: underline
+							color: $gold
+
+
+.carousel-indicators
+	bottom: 0px
+
+.carousel-control
+	margin: 0px auto
+	line-height: auto
+
+.glyphicons-chevron-left, .glyphicons-chevron-right
+	font-size: 2em
+	position: absolute
+	display: inline-block
+	z-index: 2000
+	top: 50%
+	margin-top: -1em
+
+.glyphicons-chevron-left 
+	left: 50%
+	margin-left: -10px
+
+	@media (max-width: 767px)
+		font-size: 1.5em
+		left: 0%
+		margin-left: 0px
+
+.glyphicons-chevron-right 
+	right: 50%
+	margin-right: -10px
+
+	@media (max-width: 992px)
+		font-size: 1.5em
+		right: 0%
+		margin-right: 8px
+
+
+
+
+
+//================TRAVEL===================//
+
+
+
+
+
+.travel-container
+	width: 100%
+	background-color: $purple
+	font-family: Chelsea-bold
+	color: $champagne
+	padding-bottom: 75px
+	font-size: 16pt
+
+	@media (max-width: 992px)
+		font-size: 12pt
+		padding-bottom: 50px
+
+	@media (max-width: 767px)
+		font-size: 10pt
+		padding-bottom: 25px
+
+	.travel-wrapper
+		text-align: center
+
+		h1
+			font-size: 3em
+			margin: 50px 0px
+			text-decoration: underline
+
+			@media (max-width: 992px)
+				padding: 25px 0px
+				margin: 10px 0px
+				font-size: 2.75em
+
+			@media (max-width: 767px)
+				font-size: 2.5em
+
+		h2
+			font-size: 1.5em
+			font-weight: 600
+
+			@media (max-width: 992px)
+				font-size: 1.25em
+
+			@media (max-width: 767px)
+				font-size: 1.25em
+
+		h3
+			font-weight: 600
+			font-style: italic
+			margin-bottom: 50px
+
+			@media (max-width: 992px)
+				font-size: 1.25em
+				margin-bottom: 25px
+
+			@media (max-width: 767px)
+				font-size: 1.25em
+				margin-bottom: 15px
+
+		span
+			font-size: 3em
+			margin: 25px 0px
+
+			@media (max-width: 992px)
+				font-size: 2.5em
+				margin: 15px 0px
+			@media (max-width: 767px)
+				font-size: 2em
+				margin: 10px 0px
+		p
+
+			font-family: Chelsea-bold
+			text-align: left
+			font-size: .9em
+			font-weight: 900
+			padding: 25px 0px
+			margin-top: 10px
+
+			@media (max-width: 992px)
+				padding: 15px 
+
+			@media (max-width: 767px)
+				font-size: 1.15em
+
+		.airport-wrapper, .hotel-wrapper
+			h2
+				margin-bottom: 30px
+
+			a
+				text-decoration: none
+				color: $champagne
+				cursor: pointer
+
+				&:hover
+					color: $gold
+
+					.travel-btn
+						background-color: $gold
+						color: $purple
+
+			.travel-btn
+				padding: 10px 30px
+				font-weight: 600
+				border: 1px solid $gold
+				font-size: 1.25em
+				margin: 20px 0px
+				-webkit-transition: all 0.3s ease
+				-moz-transition: all 0.3s ease
+				-ms-transition: all 0.3s ease
+				-o-transition: all 0.3s ease
+				transition: all 0.3s ease
+
+.modal-dialog
+	width: 85%
+
+	@media (max-width: 992px)
+		width: 75%
+		margin: 0px auto
+
+.modal-hotel, .modal-content
+	background-color: $champagne
+	text-align: center
+	color: $purple
+	font-family: Chelsea-bold
+	font-weight: 600
+	font-size: 16pt
+
+	@media (max-width: 992px)
+		font-size: 12pt
+		padding: 5px
+
+	@media (max-width: 767px)
+		font-size: 10pt
+
+	h1
+		font-size: 3em
+		text-decoration: underline
+		padding-bottom: 50px
+
+		@media (max-width: 992px)
+			padding-bottom: 20px
+
+		@media (max-width: 767px)
+			padding-bottom: 10px
+	a
+		text-decoration: none
+		color: $purple
+		padding: 10px 25px
+		font-size: 1em
+		border: 1px solid $purple
+		-webkit-transition: all 0.3s ease
+		-moz-transition: all 0.3s ease
+		-ms-transition: all 0.3s ease
+		-o-transition: all 0.3s ease
+		transition: all 0.3s ease
+
+		@media (max-width: 992px)
+			padding: 15px 40px
+
+		@media (max-width: 772px)
+			padding: 20px 45px
+			font-size: 1.25em
+
+		&:hover 
+			color: $gold
+			background-color: $purple
+			border: 1px solid $purple
+
+	h2
+		font-size: 1.5em
+		font-weight: 600
+		margin: 15px 0px -20px 0px
+
+	h3
+		font-size: 1.25em
+		font-family: Chelsea
+		font-weight: 600
+		margin: 30px 0px
+
+	h4
+		font-size: 1.3em
+		font-family: Chelsea-bold
+		font-weight: 600
+		margin: 40px 0px
+
+		@media (max-width: 767px)
+			margin: 20px 0px
+
+	h5
+		font-size: .9em
+		font-weight: 600
+		margin: 30px 0px
+		font-family: Chelsea-solid
+		font-style: italic
+
+
+
+
+
+//==================BRIDAL PARTY===================//
+
+
+
+
+
+.bridal-container, .memoriam-container
+	background-color: $purple
+	width: 100%
+	font-size: 16pt
+	padding-bottom: 50px
+
+	@media (max-width: 992px)
+		font-size: 12pt
+
+	@media (max-width: 767px)
+		font-size: 10pt
+		width: 90%
+		margin-left: 5%
+
+	@media (max-width: 400px)
+		font-size: 8pt
+
+	h1
+		margin: 0px 0px 50px 0px
+		padding: 25px 0px
+		color: $champagne
+		font-size: 3em
+		font-family: Chelsea-bold
+		text-decoration: underline
+
+		@media (max-width: 992px)
+			margin: 0px 0px 15px 0px
+			font-size: 2.75em
+
+		@media (max-width: 767px)
+			margin: 0px 0px 10px 0px
+			font-size: 2.5em
+
+	.bridal-member, .memoriam-member, .groomsmen-member
+		position: relative
+		background-color: $gold
+		border: 2px solid $gold
+		margin-bottom: 30px
+
+		&:hover
+			img
+				opacity: .2
+				-webkit-transition: opacity 0.5s ease
+				-moz-transition: opacity 0.5s ease
+				-ms-transition: opacity 0.5s ease
+				-o-transition: opacity 0.5s ease
+				transition: opacity 0.5s ease
+
+				@media (max-width: 992px)
+					opacity: 1
+
+			.caption
+				visibility: visible
+				color: $purple
+				font-family: Chelsea-bold
+				font-weight: 600
+				font-size: 1.25em
+				top: 35%
+				-webkit-transition: opacity 0.5s ease
+				-moz-transition: opacity 0.5s ease
+				-ms-transition: opacity 0.5s ease
+				-o-transition: opacity 0.5s ease
+				transition: opacity 0.5s ease
+
+				@media (max-width: 992px)
+					visibility: visible
+					color: $purple
+					font-family: Chelsea-bold
+					font-weight: 600
+					font-size: 1.05em
+					top: 80%
+					-webkit-transition: opacity 0.5s ease
+					-moz-transition: opacity 0.5s ease
+					-ms-transition: opacity 0.5s ease
+					-o-transition: opacity 0.5s ease
+					transition: opacity 0.5s ease
+					background-color: rgba(224, 195, 137, .75)
+					padding-top: 8px
+
+					@media (max-width: 850px)
+						font-size: .9em
+						padding-top: 5px
+
+					@media (max-width: 767px)
+						font-size: 1.5em
+						padding-top: 15px
+
+					@media (max-width: 600px)
+						font-size: 1.15em
+						padding-top: 15px
+
+					@media (max-width: 500px)
+						font-size: 1em
+						padding-top: 8px
+
+			.memoriam-member
+				.caption
+					@media (max-width: 992px)
+						padding: 3px
+
+					@media (max-width: 767px)
+						padding: 10px
+
+					.name
+						@media (max-width: 992px)
+							font-size: 1em
+
+						@media (max-width: 767px)
+							font-size: 1.2em
+
+						@media (max-width: 500px)
+							font-size: 1.15em
+
+					.title
+						@media (max-width: 992px)
+							font-size: .85em
+
+							@media (max-width: 767px)
+								font-size: .9em
+
+							@media (max-width: 500px)
+								font-size: .85em
+
+		img
+			width: 100%
+
+		.caption
+			visibility: hidden
+
+			@media (max-width: 992px)
+				visibility: visible
+				color: $purple
+				font-family: Chelsea-bold
+				font-weight: 600
+				font-size: 1.05em
+				top: 80%
+				-webkit-transition: opacity 0.5s ease
+				-moz-transition: opacity 0.5s ease
+				-ms-transition: opacity 0.5s ease
+				-o-transition: opacity 0.5s ease
+				transition: opacity 0.5s ease
+				background-color: rgba(224, 195, 137, .75)
+				padding-top: 8px
+
+			@media (max-width: 850px)
+				font-size: .9em
+				padding-top: 5px
+
+			@media (max-width: 767px)
+				font-size: 1.5em
+				padding-top: 15px
+
+			@media (max-width: 600px)
+				font-size: 1.15em
+				padding-top: 15px
+
+			@media (max-width: 500px)
+				font-size: 1em
+				padding-top: 8px
+
+			.name
+				font-size: 1.65em
+				font-weight: 600
+				margin: 0px
+
+				@media (max-width: 992px)
+					font-size: 1.05em
+					margin: 0px
+
+				@media (max-width: 767px)
+					font-size: 1.75em
+					margin: 0px
+
+				@media (max-width: 500px)
+					font-size: 1.3em
+
+			.title
+				font-size: .95em
+				margin: 0px
+				font-family: Chelsea
+
+				@media (max-width: 992px)
+					font-size: .8em
+					margin: 0px
+
+				@media (max-width: 767px)
+					font-size: 1.15em
+					margin: 0px
+
+				@media (max-width: 500px)
+					font-size: 1em
+
+	.groomsmen-member
+		&:hover
+			img
+				opacity: 0
+
+			.caption
+				top: 30%
+
+				@media (max-width: 992px)
+					top: 30%
+
+				.name
+					display: none
+
+					@media (max-width: 992px)
+						display: block
+
+				.title
+					display: block
+					font-family: Chelsea
+
+					@media (max-width: 992px)
+						display: block
+
+
+		.groomsmen
+			opacity: 0
+			background-color: $champagne
+
+		.caption
+			visibility: visible
+			color: $purple
+			font-family: Chelsea-bold
+			font-weight: 600
+			top: 30%
+
+			@media (max-width: 992px)
+				top: 30%
+
+
+			.name
+				font-size: 3em
+				padding-top: 20px
+
+				@media (max-width: 992px)
+					font-size: 2em
+					display: block
+					line-height: 75px
+					margin-top: -40px
+					text-decoration: underline
+
+				@media (max-width: 767px)
+					font-size: 2.5em
+					margin-top: -75px
+
+			.title
+				display: none
+				font-size: 1.75em
+				margin-top: -20px
+
+				@media (max-width: 992px)
+					display: block
+					font-size: 1.5em
+					line-height: 45px
+
+				@media (max-width: 767px)
+					font-size: 1.75em
+					line-height: 60px
+
+
+
+
+
+.memoriam-container
+	background-color: $purple
+	width: 100%
+	font-size: 16pt
+	padding-bottom: 50px
+
+	@media (max-width: 992px)
+		font-size: 12pt
+
+	@media (max-width: 767px)
+		font-size: 10pt
+		width: 90%
+		margin-left: 5%
+
+
+	h1
+		margin: 0px 0px 50px 0px
+		padding: 25px 0px
+		color: $champagne
+		font-size: 3em
+		font-family: Chelsea-bold
+		text-decoration: underline
+
+		@media (max-width: 992px)
+			font-size: 2.75em
+			margin: 0px 0px 15px 0px
+
+		@media (max-width: 767px)
+			font-size: 2.5em
+			margin: 0px 0px 10px 0px
+
+	.memoriam-member
+		.caption
+			@media (max-width: 992px)
+				padding: 3px
+
+			@media (max-width: 767px)
+				padding: 10px
+
+			@media (max-width: 500px)
+				padding: 3px
+
+			.name
+				@media (max-width: 992px)
+					font-size: 1em
+
+				@media (max-width: 767px)
+					font-size: 1.2em
+
+				@media (max-width: 500px)
+					font-size: 1em
+
+			.title
+				@media (max-width: 992px)
+					font-size: .85em
+
+				@media (max-width: 767px)
+					font-size: .9em
+
+				@media (max-width: 500px)
+					font-size: .8em
+
+
+
+
+//==================REGISTRY===================//
+
+
+
+
+.registry-container
+	width: 100%
+	background-color: $purple
+	margin-top: -20px
+	font-size: 16pt
+	padding-bottom: 20px
+
+	@media (max-width: 992px)
+		font-size: 14pt
+
+	@media (max-width: 767px)
+		font-size: 12px
+
+	h1
+		padding: 30px 0px
+		color: $champagne
+		font-family: Chelsea-bold
+		font-size: 3em
+		text-decoration: underline
+
+		@media (max-width: 992px)
+			padding: 15px 0px
+
+		@media (max-width: 767px)
+			padding: 10px 0px
+
+	.registry-wrapper
+		margin: 50px 0px
+
+		@media (max-width: 992px)
+			margin: 25px 0px
+
+		@media (max-width: 992px)
+			margin: 10px 0px
+
+	.registry-link
+		padding: 60px 0px
+
+		img
+			width: 60%
+
+		.amazon
+			padding-top: 10px
+
+
+
+//==================CONTACT===================//
+
+
+
+
+.contact-container
+	width: 100%
+	background-color: $purple
+	text-align: center
+	color: $champagne
+	padding: 15px 0px 50px 0px
+	font-size: 16pt
+	font-family: Chelsea
+
+	@media (max-width: 992px)
+		padding: 25px 0px
+
+	@media (max-width: 767px)
+		padding: 15px 0px
+		width: 90%
+		margin-left: 5%
+
+	a
+		color: $purple
+		cursor: pointer
+
+		&:hover, &:visited
+			color: $purple
+			text-decoration: underline
+
+	h1
+		font-size: 2.5em
+		text-decoration: underline
+		font-family: Chelsea-bold
+		padding-bottom: 20px
+
+		@media (max-width: 992px)
+			margin: 20px 0px
+			font-size: 2em
+
+		@media (max-width: 767px)
+			margin: 10px 0px
+			font-size: 1.75em
+
+	h2
+		color: $purple
+		text-align: center
+		font-weight: 600
+
+	h4
+		color: $purple
+		font-weight: 600
+
+	h5
+		font-size: 1.5em
+		text-decoration: underline
+		font-weight: 600
+		margin: 25px 0px
+
+	img
+		width: 80%
+		margin: 0px auto
+
+	#container
+		background-color: $champagne
+		text-align: center
+		border-radius: 5px
+
+		@media (max-width: 767px)
+			width: 100%
+
+		ul
+			text-align: left
+			margin: 0px auto
+
+			li
+				margin: 0px auto
+				padding: 15px
+
+				label
+					color: $purple
+					font-size: 16pt
+
+				input
+					width: 100%
+					font-size: 12pt
+					font-family: Chelsea
+
+				textarea
+					font-size: 12pt
+					font-family: Chelsea
+
+				h6
+					text-align: center
+					color: red
+					font-size: .75em
+
+				#saveForm
+					color: $champagne
+					background-color: $purple
+					font-size: 16pt
+			
+

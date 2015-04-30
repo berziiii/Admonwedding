@@ -7,30 +7,22 @@ module.exports = function(grunt) {
             options: {
                 enabled: true,
                 max_jshint_notifications: 5,
-                title: "Admon Wedding Site" // Change this to your project
+                title: "Admon Wedding" // Change this to your project
             }
         },
         //- Concat JS into single files
         concat: {
             css : {
                 src: [
-                'src/css/**/*.css'
+                'src/css/main.css'
                 ],
                 dest : 'test/css/main-concat.css'
-            },
-        },
-        //- Uglify concatenated and other JS files
-        uglify: {
-            js : {
-                files: {
-                    'dist/js/main.js': ['src/js/main.js']
-                }
             },
         },
         // Prefix the CSS
         autoprefixer: {
             options: {
-                browsers: ["last 2 versions", "> 1%", "ie 8", "ie 7"]
+                browsers: ["last 2 versions", "> 5%", "ie 8", "ie 7"]
             },
             your_target: {
                 options: {
@@ -57,12 +49,12 @@ module.exports = function(grunt) {
                 collapseWhitespace: true
               },
               files: {                                   // Dictionary of files
-                'dist/index.html': 'src/index.html',     // 'destination': 'source'
+                'dist/index.html': 'src/index.html',
+                'dist/bridal-party.html': 'src/bridal-party.html',     // 'destination': 'source'
                 'dist/events.html': 'src/events.html',
                 'dist/travel.html': 'src/travel.html',
-                'dist/bridal-party.html': 'src/bridal-party.html',
                 'dist/registry.html': 'src/registry.html',
-                'dist/contact.html': 'src/contact.html',
+                'dist/contact.html': 'src/contact.html'
               }
             }
         },
@@ -76,10 +68,11 @@ module.exports = function(grunt) {
                 files: [{
                     cwd: 'src',
                     src: [
+                        'fonts/**',
                         'form/**',
                         'images/**',
-                        'fonts/**',
                         'js/**',
+                        'css/**'
                     ],
                     dest: 'dist'
                     }],
@@ -115,7 +108,7 @@ module.exports = function(grunt) {
     });
     //- REGISTER ALL OUR GRUNT TASKS
     grunt.task.run('notify_hooks');
-    grunt.registerTask('default', ['concat', 'uglify', 'autoprefixer', 'cssmin', 'htmlmin', 'sync', 'watch']);
+    grunt.registerTask('default', ['concat', 'autoprefixer', 'cssmin', 'htmlmin', 'sync', 'watch']);
     grunt.registerTask('app_change', ['concat:app', 'uglify:app', 'uglify:main']);
     grunt.registerTask('concat_change', ['uglify:app']);
     grunt.registerTask('css_prefixed', ['autoprefixer']);
